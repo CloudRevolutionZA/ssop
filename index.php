@@ -520,22 +520,5 @@ require_once __DIR__ . '/includes/header.php';
   </div>
 </section>
 
-<!-- FOOTER CTA -->
-<div class="bg-ssop-dark2 grid grid-cols-3 border-t border-gray-700 divide-x divide-gray-700">
-  <div class="px-12 py-12 flex flex-col gap-3">
-    <div class="font-barlow-condensed text-lg font-black uppercase text-ssop-white">Ready to Protect Your Community?</div>
-    <a href="get-involved.php" class="bg-ssop-red text-ssop-white font-barlow-condensed font-black text-xs tracking-wider uppercase px-6 py-3 hover:bg-ssop-red-dark transition-colors w-fit">Get Involved Today</a>
-  </div>
-  
-  <div class="px-12 py-12 text-center">
-    <div class="font-barlow-condensed text-3xl font-black text-ssop-white mb-2">Safer Communities.</div>
-    <div class="font-barlow-condensed text-3xl font-black text-ssop-white"><em class="text-gray-400 font-light text-2xl block">Stronger Together.</em></div>
-  </div>
-  
-  <div class="px-12 py-12 flex flex-col gap-3 items-end">
-    <div class="font-barlow-condensed text-lg font-black uppercase text-ssop-white">Emergency?</div>
-    <a href="tel:<?php echo PHONE_NUMBER; ?>" class="font-barlow-condensed font-black text-3xl text-ssop-red hover:opacity-70 transition-opacity"><?php echo PHONE_NUMBER; ?></a>
-  </div>
-</div>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
