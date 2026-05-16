@@ -368,47 +368,58 @@ require_once __DIR__ . '/includes/header.php';
 
 <!-- COMMUNITY IMPACT -->
 <section class="bg-black py-20">
-  <!-- Title -->
-  <div class="text-center mb-12">
-    <div class="font-barlow-condensed text-3xl font-black tracking-wider uppercase text-white">Community Impact</div>
-  </div>
-  
-  <!-- Stats Row -->
+  <!-- Single Box Container -->
   <div class="px-16 lg:px-24 mb-8">
-    <div class="bg-ssop-dark border border-gray-800 rounded grid grid-cols-5 divide-x divide-gray-800">
-      <!-- 150+ CCTV Cameras -->
-      <div class="p-8 flex flex-col items-center justify-center text-center">
-        <div class="text-5xl mb-4">📹</div>
-        <div class="font-barlow-condensed text-4xl font-black text-white mb-2">150+</div>
-        <div class="text-xs text-gray-400 uppercase font-barlow-condensed font-black">CCTV Cameras<br>and Growing</div>
+    <div class="bg-ssop-dark border border-gray-800 rounded p-8">
+      <!-- Title -->
+      <div class="text-center mb-8">
+        <div class="font-barlow-condensed text-3xl font-black tracking-wider uppercase text-white">Community Impact</div>
       </div>
       
-      <!-- 1000+ Incidents -->
-      <div class="p-8 flex flex-col items-center justify-center text-center">
-        <div class="text-5xl mb-4">🚨</div>
-        <div class="font-barlow-condensed text-4xl font-black text-white mb-2">1000+</div>
-        <div class="text-xs text-gray-400 uppercase font-barlow-condensed font-black">Incidents<br>Responded to</div>
-      </div>
-      
-      <!-- 8+ Years -->
-      <div class="p-8 flex flex-col items-center justify-center text-center">
-        <div class="text-5xl mb-4">👥</div>
-        <div class="font-barlow-condensed text-4xl font-black text-white mb-2">8+</div>
-        <div class="text-xs text-gray-400 uppercase font-barlow-condensed font-black">Years of Active<br>Service</div>
-      </div>
-      
-      <!-- Strong Partnerships -->
-      <div class="p-8 flex flex-col items-center justify-center text-center">
-        <div class="text-5xl mb-4">🤝</div>
-        <div class="text-xs text-gray-300 uppercase font-barlow-condensed font-black leading-tight">Strong Partnerships<br>with Other Security<br>Companies & Role<br>Players</div>
-      </div>
-      
-      <!-- Testimonial Quote -->
-      <div class="p-8 flex items-center justify-center">
-        <div>
-          <div class="text-ssop-red text-6xl leading-none mb-2">"</div>
-          <div class="text-sm text-gray-300 italic leading-relaxed mb-3">SSOP's response time and visibility make a real difference. You can see the change in our area.</div>
-          <div class="text-xs text-gray-500">— Constantia Kloof Resident</div>
+      <!-- Stats Grid -->
+      <div class="grid grid-cols-5 divide-x divide-gray-800">
+        <!-- 150+ CCTV Cameras -->
+        <div class="px-8 py-4 flex items-center gap-6">
+          <img src="assets/icons/cctv_white.png" alt="CCTV" class="w-16 h-16 flex-shrink-0">
+          <div>
+            <div class="font-barlow-condensed text-4xl font-black text-white mb-2">150+</div>
+            <div class="text-sm text-gray-400 uppercase font-barlow-condensed font-black">CCTV Cameras<br>and Growing</div>
+          </div>
+        </div>
+        
+        <!-- 1000+ Incidents -->
+        <div class="px-8 py-4 flex items-center gap-6">
+          <img src="assets/icons/responsetime.png" alt="Response Time" class="w-16 h-16 flex-shrink-0">
+          <div>
+            <div class="font-barlow-condensed text-4xl font-black text-white mb-2">1000+</div>
+            <div class="text-sm text-gray-400 uppercase font-barlow-condensed font-black">Incidents<br>Responded to</div>
+          </div>
+        </div>
+        
+        <!-- 8+ Years -->
+        <div class="px-8 py-4 flex items-center gap-6">
+          <img src="assets/icons/community.png" alt="Community" class="w-16 h-16 flex-shrink-0">
+          <div>
+            <div class="font-barlow-condensed text-4xl font-black text-white mb-2">8+</div>
+            <div class="text-sm text-gray-400 uppercase font-barlow-condensed font-black">Years of Active<br>Service</div>
+          </div>
+        </div>
+        
+        <!-- Strong Partnerships -->
+        <div class="px-8 py-4 flex items-center gap-6">
+          <img src="assets/icons/handshake.png" alt="Partnerships" class="w-16 h-16 flex-shrink-0">
+          <div>
+            <div class="text-sm text-gray-300 uppercase font-barlow-condensed font-black leading-tight">Strong Partnerships<br>with Other Security<br>Companies & Role<br>Players</div>
+          </div>
+        </div>
+        
+        <!-- Testimonial Quote -->
+        <div class="px-8 py-4 flex items-center justify-center">
+          <div>
+            <div class="text-ssop-red text-7xl leading-none mb-3">"</div>
+            <div class="text-base text-gray-300 italic leading-relaxed mb-4">SSOP's response time and visibility make a real difference. You can see the change in our area.</div>
+            <div class="text-sm text-gray-500">— Constantia Kloof Resident</div>
+          </div>
         </div>
       </div>
     </div>
@@ -418,77 +429,92 @@ require_once __DIR__ . '/includes/header.php';
   <div class="px-16 lg:px-24 mb-8">
     <div class="grid grid-cols-3 gap-8">
       <!-- Stay Connected -->
-      <div class="bg-ssop-dark border border-gray-800 rounded p-10">
-        <div class="font-barlow-condensed text-2xl font-black uppercase text-ssop-red mb-4">Stay Connected</div>
-        <div class="text-sm text-gray-300 mb-8 leading-relaxed">Join our WhatsApp community for updates, alerts and important info.</div>
+      <div class="bg-ssop-dark border border-gray-800 rounded p-6">
+        <div class="font-barlow-condensed text-2xl font-black uppercase text-ssop-red mb-3">Stay Connected</div>
+        <div class="text-sm text-gray-300 mb-4 leading-relaxed">Join our WhatsApp community for updates, alerts and important info.</div>
         
-        <div class="flex justify-center mb-8">
+        <div class="flex justify-center mb-4">
           <div class="relative">
-            <div class="text-8xl">📱</div>
-            <div class="absolute bottom-0 right-0 bg-green-600 rounded-full p-3">
-              <img src="assets/icons/whatsapp_white.png" alt="WhatsApp" class="w-8 h-8">
+            <div class="text-7xl">📱</div>
+            <div class="absolute bottom-0 right-0 bg-green-600 rounded-full p-2">
+              <img src="assets/icons/whatsapp_white.png" alt="WhatsApp" class="w-6 h-6">
             </div>
           </div>
         </div>
         
-        <a href="https://wa.me/<?php echo str_replace([' ', '+', '-'], '', PHONE_NUMBER); ?>" class="bg-green-600 text-white font-barlow-condensed font-black text-sm tracking-wider uppercase px-8 py-4 hover:bg-green-700 transition-colors flex items-center justify-center gap-2 w-full">
+        <a href="https://wa.me/<?php echo str_replace([' ', '+', '-'], '', PHONE_NUMBER); ?>" class="bg-green-600 text-white font-barlow-condensed font-black text-sm tracking-wider uppercase px-8 py-3 hover:bg-green-700 transition-colors flex items-center justify-center gap-2 w-full">
           <img src="assets/icons/whatsapp_white.png" alt="WhatsApp" class="w-5 h-5"> Join WhatsApp Group
         </a>
       </div>
       
       <!-- Register for Community Projects -->
-      <div class="bg-ssop-dark border border-gray-800 rounded p-10">
-        <div class="font-barlow-condensed text-2xl font-black uppercase text-ssop-red mb-4">Register for Our Community Projects</div>
-        <div class="text-sm text-gray-300 mb-8 leading-relaxed">Be part of positive change in our community.</div>
-        
-        <div class="flex justify-around mb-8">
-          <div class="flex flex-col items-center text-center">
-            <div class="w-20 h-20 rounded-full bg-green-600 flex items-center justify-center text-3xl mb-3">🌱</div>
-            <div class="text-xs text-white font-barlow-condensed font-black uppercase">Elderly Support<br>Program</div>
+      <div class="col-span-2 bg-ssop-dark border border-gray-800 rounded p-6 grid grid-cols-2 gap-6">
+        <!-- Left Side - Content -->
+        <div>
+          <div class="font-barlow-condensed text-2xl font-black uppercase text-ssop-red mb-3">Register for Our Community Projects</div>
+          <div class="text-sm text-gray-300 mb-4 leading-relaxed">Be part of positive change in our community.</div>
+          
+          <div class="flex justify-around mb-4">
+            <div class="flex flex-col items-center text-center">
+              <div class="w-20 h-20 rounded-full bg-green-600 flex items-center justify-center mb-2">
+                <img src="assets/icons/care.png" alt="Elderly Support" class="w-12 h-12">
+              </div>
+              <div class="text-xs text-white font-barlow-condensed font-black uppercase">Elderly Support<br>Program</div>
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <div class="w-20 h-20 rounded-full bg-blue-600 flex items-center justify-center mb-2">
+                <img src="assets/icons/community.png" alt="Youth Development" class="w-12 h-12">
+              </div>
+              <div class="text-xs text-white font-barlow-condensed font-black uppercase">Youth Development<br>Program</div>
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <div class="w-20 h-20 rounded-full bg-orange-600 flex items-center justify-center mb-2">
+                <img src="assets/icons/community.png" alt="Community Projects" class="w-12 h-12">
+              </div>
+              <div class="text-xs text-white font-barlow-condensed font-black uppercase">Community Projects<br>Program</div>
+            </div>
           </div>
-          <div class="flex flex-col items-center text-center">
-            <div class="w-20 h-20 rounded-full bg-blue-600 flex items-center justify-center text-3xl mb-3">👥</div>
-            <div class="text-xs text-white font-barlow-condensed font-black uppercase">Youth Development<br>Program</div>
-          </div>
-          <div class="flex flex-col items-center text-center">
-            <div class="w-20 h-20 rounded-full bg-orange-600 flex items-center justify-center text-3xl mb-3">🎯</div>
-            <div class="text-xs text-white font-barlow-condensed font-black uppercase">Community Projects<br>Program</div>
+          
+          <div class="flex justify-center">
+            <button class="bg-orange-600 text-white font-barlow-condensed font-black text-sm tracking-wider uppercase px-8 py-3 hover:bg-orange-700 transition-colors">Register Now</button>
           </div>
         </div>
         
-        <button class="bg-orange-600 text-white font-barlow-condensed font-black text-sm tracking-wider uppercase px-8 py-4 hover:bg-orange-700 transition-colors w-full">Register Now</button>
-      </div>
-      
-      <!-- Team Image -->
-      <div class="rounded border border-gray-800 overflow-hidden">
-        <img src="assets/images/community.png" alt="SSOP Team" class="w-full h-full object-cover">
+        <!-- Right Side - Image -->
+        <div class="rounded overflow-hidden h-full flex items-center justify-center">
+          <img src="assets/images/community.png" alt="SSOP Team" class="w-11/12 h-5/6 object-cover rounded">
+        </div>
       </div>
     </div>
   </div>
   
   <!-- Bottom Row - CTA Cards -->
   <div class="px-16 lg:px-24">
-    <div class="grid grid-cols-3 gap-8">
+    <div class="bg-ssop-dark border border-gray-800 rounded p-10 grid grid-cols-3 divide-x divide-gray-800">
       <!-- Report Incident -->
-      <div class="bg-ssop-dark border border-gray-800 rounded p-10 flex flex-col justify-center">
+      <div class="px-8 flex flex-col justify-center">
         <div class="font-barlow-condensed text-2xl font-black uppercase text-white text-center mb-8 leading-tight">SSOP Can Only Assist<br>If We Know About It</div>
         <button class="bg-ssop-red text-white font-barlow-condensed font-black text-sm tracking-wider uppercase px-8 py-4 hover:bg-red-700 transition-colors w-full mb-4">Report an Incident</button>
         <button class="bg-transparent border-2 border-white text-white font-barlow-condensed font-black text-sm tracking-wider uppercase px-8 py-4 hover:bg-white hover:text-black transition-colors w-full">Save Our Number</button>
       </div>
       
       <!-- Thank You -->
-      <div class="bg-ssop-dark border border-gray-800 rounded p-10 flex flex-col items-center justify-center text-center">
+      <div class="px-8 flex flex-col items-center justify-center text-center">
         <div class="font-barlow-condensed text-2xl font-black uppercase text-white mb-6">Thank You for Supporting<br>a Safer Roodepoort</div>
         <div class="text-5xl mb-6">❤️</div>
         <div class="text-3xl text-white italic" style="font-family: 'Brush Script MT', cursive;">Let's do this, together.</div>
       </div>
       
       <!-- Make a Difference -->
-      <div class="bg-ssop-dark border border-gray-800 rounded p-10 flex flex-col justify-center items-center text-center">
-        <div class="w-24 h-24 rounded-full bg-orange-900 flex items-center justify-center text-5xl mb-6">🙏</div>
-        <div class="font-barlow-condensed text-2xl font-black uppercase text-white mb-4">Make a Difference Today</div>
-        <div class="text-sm text-gray-300 mb-6 leading-relaxed">Your support helps build safer communities for everyone.</div>
-        <button class="bg-ssop-red text-white font-barlow-condensed font-black text-sm tracking-wider uppercase px-8 py-4 hover:bg-red-700 transition-colors w-full">Make a Donation</button>
+      <div class="px-8 flex items-center gap-6">
+        <div class="w-20 h-20 rounded-full bg-amber-900 flex items-center justify-center flex-shrink-0">
+          <img src="assets/icons/care.png" alt="Care" class="w-14 h-14">
+        </div>
+        <div class="flex-1">
+          <div class="font-barlow-condensed text-2xl font-black uppercase text-white mb-3">Make a Difference Today</div>
+          <div class="text-sm text-gray-300 mb-4 leading-relaxed">Your support helps build a safer community for everyone</div>
+          <button class="bg-ssop-red text-white font-barlow-condensed font-black text-sm tracking-wider uppercase px-8 py-3 hover:bg-red-700 transition-colors">Make a Donation</button>
+        </div>
       </div>
     </div>
   </div>
