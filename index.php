@@ -87,101 +87,149 @@ require_once __DIR__ . '/includes/header.php';
 </div>
 
 <!-- WHAT WE DO -->
-<section class="bg-ssop-dark w-full py-20">
-  <div class="mb-12 flex items-center gap-8 px-0">
-    <div class="flex-1 h-1 bg-ssop-red"></div>
-    <div class="text-center px-8 flex-shrink-0">
-      <div class="font-barlow-condensed text-lg font-black tracking-widest uppercase text-ssop-grey mb-2">What We Do</div>
+<section class="bg-ssop-dark w-full py-16">
+  <!-- Section Title with Border Cutout -->
+  <div class="px-16 lg:px-24 mb-8">
+    <div class="relative border-t border-gray-700 pt-0">
+      <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-ssop-dark px-6">
+        <div class="font-barlow-condensed text-xl font-black tracking-widest uppercase text-white">What We Do</div>
+      </div>
     </div>
-    <div class="flex-1 h-1 bg-ssop-red"></div>
   </div>
   
-  <div class="grid grid-cols-5 divide-x divide-gray-700 border border-gray-700">
-    <div class="bg-ssop-black p-10 flex flex-col items-start gap-3 hover:bg-gray-950 transition-colors">
-      <img src="assets/images/patrol.png" alt="Active Patrol Operations" style="width: 100%; height: 250px; object-fit: cover;">
-      <div class="font-barlow-condensed text-base font-black uppercase text-ssop-white">Active Patrol Operations</div>
-      <div class="text-base text-ssop-grey leading-relaxed">High-visibility patrols across our communities to deter crime and respond quickly to incidents.</div>
-    </div>
-    <div class="bg-ssop-black p-10 flex flex-col items-start gap-3 hover:bg-gray-950 transition-colors">
-      <img src="assets/images/controlroom.png" alt="Operations Command Centre" style="width: 100%; height: 250px; object-fit: cover;">
-      <div class="font-barlow-condensed text-base font-black uppercase text-ssop-white">Operations Command Centre (OCC)</div>
-      <div class="text-base text-ssop-grey leading-relaxed">Our 24/7 OCC receives incidents, monitors our CCTV network and dispatches resources efficiently.</div>
-    </div>
-    <div class="bg-ssop-black p-10 flex flex-col items-start gap-3 hover:bg-gray-950 transition-colors">
-      <img src="assets/images/camera.png" alt="Community CCTV Network" style="width: 100%; height: 250px; object-fit: cover;">
-      <div class="font-barlow-condensed text-base font-black uppercase text-ssop-white">Community CCTV Network</div>
-      <div class="text-base text-ssop-grey leading-relaxed">Expanding CCTV coverage across Roodepoort through community participation and support.</div>
-    </div>
-    <div class="bg-ssop-black p-10 flex flex-col items-start gap-3 hover:bg-gray-950 transition-colors">
-      <img src="assets/images/emergency.png" alt="Emergency First Response" style="width: 100%; height: 250px; object-fit: cover;">
-      <div class="font-barlow-condensed text-base font-black uppercase text-ssop-white">Emergency First Response</div>
-      <div class="text-base text-ssop-grey leading-relaxed">Trained first aiders on scene to stabilise and support until EMS arrives.</div>
-    </div>
-    <div class="bg-ssop-black p-10 flex flex-col items-start gap-3 hover:bg-gray-950 transition-colors">
-      <img src="assets/images/community.png" alt="Community Engagement" style="width: 100%; height: 250px; object-fit: cover;">
-      <div class="font-barlow-condensed text-base font-black uppercase text-ssop-white">Community Engagement</div>
-      <div class="text-base text-ssop-grey leading-relaxed">Building safer communities through communication, awareness and partnerships.</div>
+  <div class="px-16 lg:px-24">
+    <div class="grid grid-cols-5 gap-6">
+      <div class="bg-black border border-gray-700 rounded overflow-hidden flex flex-col hover:border-gray-600 transition-colors">
+        <img src="assets/images/patrol.png" alt="Active Patrol Operations" class="w-full h-48 object-cover">
+        <div class="p-6 flex flex-col gap-3 flex-1">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-ssop-red flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <div class="font-barlow-condensed text-sm font-black uppercase text-ssop-red">Active Patrol Operations</div>
+          </div>
+          <div class="text-sm text-gray-400 leading-relaxed">High-visibility patrols across our communities to deter crime and respond quickly to incidents.</div>
+        </div>
+      </div>
+      <div class="bg-black border border-gray-700 rounded overflow-hidden flex flex-col hover:border-gray-600 transition-colors">
+        <img src="assets/images/controlroom.png" alt="Operations Command Centre" class="w-full h-48 object-cover">
+        <div class="p-6 flex flex-col gap-3 flex-1">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-ssop-red flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            </div>
+            <div class="font-barlow-condensed text-sm font-black uppercase text-ssop-red">Operations Command Centre (OCC)</div>
+          </div>
+          <div class="text-sm text-gray-400 leading-relaxed">Our 24/7 OCC receives incidents, monitors our CCTV network and dispatches resources efficiently.</div>
+        </div>
+      </div>
+      <div class="bg-black border border-gray-700 rounded overflow-hidden flex flex-col hover:border-gray-600 transition-colors">
+        <img src="assets/images/camera.png" alt="Community CCTV Network" class="w-full h-48 object-cover">
+        <div class="p-6 flex flex-col gap-3 flex-1">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-ssop-red flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+            </div>
+            <div class="font-barlow-condensed text-sm font-black uppercase text-ssop-red">Community CCTV Network</div>
+          </div>
+          <div class="text-sm text-gray-400 leading-relaxed">Expanding CCTV coverage across Roodepoort through community participation and support.</div>
+        </div>
+      </div>
+      <div class="bg-black border border-gray-700 rounded overflow-hidden flex flex-col hover:border-gray-600 transition-colors">
+        <img src="assets/images/emergency.png" alt="Emergency First Response" class="w-full h-48 object-cover">
+        <div class="p-6 flex flex-col gap-3 flex-1">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-ssop-red flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
+            </div>
+            <div class="font-barlow-condensed text-sm font-black uppercase text-ssop-red">Emergency First Response</div>
+          </div>
+          <div class="text-sm text-gray-400 leading-relaxed">Trained first aiders on scene to stabilise and support until EMS arrives.</div>
+        </div>
+      </div>
+      <div class="bg-black border border-gray-700 rounded overflow-hidden flex flex-col hover:border-gray-600 transition-colors">
+        <img src="assets/images/community.png" alt="Community Engagement" class="w-full h-48 object-cover">
+        <div class="p-6 flex flex-col gap-3 flex-1">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-ssop-red flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+            </div>
+            <div class="font-barlow-condensed text-sm font-black uppercase text-ssop-red">Community Engagement</div>
+          </div>
+          <div class="text-sm text-gray-400 leading-relaxed">Building safer communities through communication, awareness and partnerships.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- OUR COMMUNITY PROJECTS -->
-<section class="bg-ssop-black w-full py-20">
-  <div class="mb-12 flex items-center gap-8 px-0">
-    <div class="flex-1 h-1 bg-ssop-red"></div>
-    <div class="text-center px-8 flex-shrink-0">
-      <div class="font-barlow-condensed text-lg font-black tracking-widest uppercase text-ssop-grey mb-2">Our Community Projects</div>
+<section class="bg-ssop-black w-full py-16">
+  <!-- Section Title with Border Cutout -->
+  <div class="px-16 lg:px-24 mb-8">
+    <div class="relative border-t border-gray-700 pt-0">
+      <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-ssop-black px-6">
+        <div class="font-barlow-condensed text-xl font-black tracking-widest uppercase text-white">Our Community Projects</div>
+      </div>
     </div>
-    <div class="flex-1 h-1 bg-ssop-red"></div>
   </div>
   
-  <div class="grid grid-cols-3 gap-8 px-16 lg:px-24">
-    <div class="bg-white rounded-lg overflow-hidden flex flex-col hover:shadow-lg transition-shadow">
-      <img src="assets/images/elderlysupport.png" alt="Elderly Support Program" style="width: 100%; height: 200px; object-fit: cover;">
-      <div class="p-8 flex flex-col gap-4">
-        <div class="flex items-center gap-3">
-          <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-2xl">❤</div>
-          <div class="font-barlow-condensed text-lg font-black uppercase text-green-600">Elderly Support Program</div>
+  <div class="px-16 lg:px-24">
+    <div class="grid grid-cols-3 gap-8">
+      <div class="bg-black border border-gray-700 rounded-lg overflow-hidden flex flex-col hover:border-green-600 transition-colors">
+        <img src="assets/images/elderlysupport.png" alt="Elderly Support Program" class="w-full h-56 object-cover">
+        <div class="p-6 flex flex-col gap-4 flex-1">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <div class="font-barlow-condensed text-base font-black uppercase text-green-600">Elderly Support Program</div>
+          </div>
+          <div class="text-sm text-gray-400 leading-relaxed">Supporting our elderly residents through visits, assistance and connection.</div>
+          <a href="get-involved.php" class="bg-transparent border border-green-600 text-green-600 font-barlow-condensed font-black text-xs tracking-wider uppercase px-6 py-2 hover:bg-green-600 hover:text-white transition-colors text-center mt-auto">Register / Get Assistance</a>
         </div>
-        <div class="text-base text-gray-700 leading-relaxed">Supporting our elderly residents through visits, assistance and connection.</div>
-        <a href="get-involved.php" class="text-base font-barlow-condensed font-black uppercase tracking-wider text-green-600 hover:opacity-70 transition-opacity mt-auto">Register / Get Assistance →</a>
       </div>
-    </div>
-    
-    <div class="bg-white rounded-lg overflow-hidden flex flex-col hover:shadow-lg transition-shadow">
-      <img src="assets/images/youthempowerment.png" alt="Youth Development Program" style="width: 100%; height: 200px; object-fit: cover;">
-      <div class="p-8 flex flex-col gap-4">
-        <div class="flex items-center gap-3">
-          <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-2xl">⭐</div>
-          <div class="font-barlow-condensed text-lg font-black uppercase text-blue-600">Youth Development Program</div>
+      
+      <div class="bg-black border border-gray-700 rounded-lg overflow-hidden flex flex-col hover:border-blue-600 transition-colors">
+        <img src="assets/images/youthempowerment.png" alt="Youth Development Program" class="w-full h-56 object-cover">
+        <div class="p-6 flex flex-col gap-4 flex-1">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <div class="font-barlow-condensed text-base font-black uppercase text-blue-600">Youth Development Program</div>
+          </div>
+          <div class="text-sm text-gray-400 leading-relaxed">Empowering our youth through mentorship, skills development and positive activities.</div>
+          <a href="get-involved.php" class="bg-transparent border border-blue-600 text-blue-600 font-barlow-condensed font-black text-xs tracking-wider uppercase px-6 py-2 hover:bg-blue-600 hover:text-white transition-colors text-center mt-auto">Register / Get Involved</a>
         </div>
-        <div class="text-base text-gray-700 leading-relaxed">Empowering our youth through mentorship, skills development and positive activities.</div>
-        <a href="get-involved.php" class="text-base font-barlow-condensed font-black uppercase tracking-wider text-blue-600 hover:opacity-70 transition-opacity mt-auto">Register / Get Involved →</a>
       </div>
-    </div>
-    
-    <div class="bg-white rounded-lg overflow-hidden flex flex-col hover:shadow-lg transition-shadow">
-      <img src="assets/images/community.png" alt="Community Projects Program" style="width: 100%; height: 200px; object-fit: cover;">
-      <div class="p-8 flex flex-col gap-4">
-        <div class="flex items-center gap-3">
-          <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center text-2xl">🌱</div>
-          <div class="font-barlow-condensed text-lg font-black uppercase text-orange-600">Community Projects Program</div>
+      
+      <div class="bg-black border border-gray-700 rounded-lg overflow-hidden flex flex-col hover:border-orange-600 transition-colors">
+        <img src="assets/images/community.png" alt="Community Projects Program" class="w-full h-56 object-cover">
+        <div class="p-6 flex flex-col gap-4 flex-1">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-orange-600 flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="font-barlow-condensed text-base font-black uppercase text-orange-600">Community Projects Program</div>
+          </div>
+          <div class="text-sm text-gray-400 leading-relaxed">Initiatives that uplift our neighbourhoods and create lasting change.</div>
+          <a href="projects.php" class="bg-transparent border border-orange-600 text-orange-600 font-barlow-condensed font-black text-xs tracking-wider uppercase px-6 py-2 hover:bg-orange-600 hover:text-white transition-colors text-center mt-auto">Register / Get Involved</a>
         </div>
-        <div class="text-base text-gray-700 leading-relaxed">Initiatives that uplift our neighbourhoods and create lasting change.</div>
-        <a href="projects.php" class="text-base font-barlow-condensed font-black uppercase tracking-wider text-orange-600 hover:opacity-70 transition-opacity mt-auto">Register / Get Involved →</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- IN COLLABORATION WITH -->
-<section class="bg-ssop-dark w-full py-20 border-t border-gray-700">
-  <div class="mb-12 flex items-center gap-8 px-0">
-    <div class="flex-1 h-1 bg-ssop-red"></div>
-    <div class="text-center px-8 flex-shrink-0">
-      <div class="font-barlow-condensed text-lg font-black tracking-widest uppercase text-ssop-grey mb-2">In Collaboration With</div>
+<section class="bg-ssop-dark w-full py-16 border-t border-gray-700">
+  <!-- Section Title with Border Cutout -->
+  <div class="px-16 lg:px-24 mb-8">
+    <div class="relative border-t border-gray-700 pt-0">
+      <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-ssop-dark px-6">
+        <div class="font-barlow-condensed text-xl font-black tracking-widest uppercase text-white">In Collaboration With</div>
+      </div>
     </div>
-    <div class="flex-1 h-1 bg-ssop-red"></div>
   </div>
   
   <div class="px-16 lg:px-24">
@@ -199,6 +247,7 @@ require_once __DIR__ . '/includes/header.php';
 </section>
 
 <!-- HOW IT WORKS + OCC -->
+<section class="py-16">
 <div class="grid grid-cols-2">
   <!-- HOW IT WORKS - Light Side -->
   <div class="bg-gray-100 px-16 py-14 border-r border-gray-300">
@@ -294,10 +343,10 @@ require_once __DIR__ . '/includes/header.php';
       <img src="assets/images/controlroom.png" alt="Operations Command Centre" class="w-full h-full object-cover">
     </div>
   </div>
-</div>
+</section>
 
 <!-- 3 CALL TO ACTION -->
-<div class="bg-ssop-black py-20 px-16 lg:px-24">
+<section class="bg-ssop-black py-16 px-16 lg:px-24">
   <div class="grid grid-cols-3 gap-8">
     <!-- JOIN AS SSOP MEMBER -->
     <div class="relative overflow-hidden bg-black rounded-lg border border-gray-800 min-h-[400px]">
@@ -364,12 +413,12 @@ require_once __DIR__ . '/includes/header.php';
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- COMMUNITY IMPACT -->
-<section class="bg-black py-20">
+<section class="bg-black py-16">
   <!-- Single Box Container -->
-  <div class="px-16 lg:px-24 mb-8">
+  <div class="px-16 lg:px-24 mb-12">
     <div class="bg-ssop-dark border border-gray-800 rounded p-8">
       <!-- Title -->
       <div class="text-center mb-8">
@@ -426,7 +475,7 @@ require_once __DIR__ . '/includes/header.php';
   </div>
   
   <!-- Middle Row -->
-  <div class="px-16 lg:px-24 mb-8">
+  <div class="px-16 lg:px-24 mb-12">
     <div class="grid grid-cols-3 gap-8">
       <!-- Stay Connected -->
       <div class="bg-ssop-dark border border-gray-800 rounded p-6">
@@ -490,30 +539,34 @@ require_once __DIR__ . '/includes/header.php';
   
   <!-- Bottom Row - CTA Cards -->
   <div class="px-16 lg:px-24">
-    <div class="bg-ssop-dark border border-gray-800 rounded p-10 grid grid-cols-3 divide-x divide-gray-800">
+    <div class="bg-gradient-to-b from-black to-gray-950 border border-gray-800 rounded-lg p-6 grid grid-cols-3 divide-x divide-gray-700">
       <!-- Report Incident -->
-      <div class="px-8 flex flex-col justify-center">
-        <div class="font-barlow-condensed text-2xl font-black uppercase text-white text-center mb-8 leading-tight">SSOP Can Only Assist<br>If We Know About It</div>
-        <button class="bg-ssop-red text-white font-barlow-condensed font-black text-sm tracking-wider uppercase px-8 py-4 hover:bg-red-700 transition-colors w-full mb-4">Report an Incident</button>
-        <button class="bg-transparent border-2 border-white text-white font-barlow-condensed font-black text-sm tracking-wider uppercase px-8 py-4 hover:bg-white hover:text-black transition-colors w-full">Save Our Number</button>
+      <div class="px-8 flex flex-col items-center justify-center text-center">
+        <div class="font-barlow-condensed text-lg font-black uppercase text-white mb-6 leading-tight tracking-wide">SSOP Can Only Assist<br>If We Know About It</div>
+        <button class="bg-ssop-red text-white font-barlow-condensed font-black text-xs tracking-wider uppercase px-10 py-3 hover:bg-red-700 transition-colors mb-3 w-full">Report an Incident</button>
+        <button class="bg-transparent border border-gray-600 text-white font-barlow-condensed font-black text-xs tracking-wider uppercase px-10 py-3 hover:bg-gray-800 hover:border-white transition-colors w-full">Save Our Number</button>
       </div>
       
       <!-- Thank You -->
       <div class="px-8 flex flex-col items-center justify-center text-center">
-        <div class="font-barlow-condensed text-2xl font-black uppercase text-white mb-6">Thank You for Supporting<br>a Safer Roodepoort</div>
-        <div class="text-5xl mb-6">❤️</div>
-        <div class="text-3xl text-white italic" style="font-family: 'Brush Script MT', cursive;">Let's do this, together.</div>
+        <div class="font-barlow-condensed text-lg font-black uppercase text-white mb-4 leading-tight tracking-wide">Thank You for Supporting<br>a Safer Roodepoort</div>
+        <div class="flex items-center gap-3 mt-2">
+          <div class="text-4xl italic text-white" style="font-family: 'Brush Script MT', cursive;">Let's do this, together.</div>
+          <div class="text-4xl">❤️</div>
+        </div>
       </div>
       
       <!-- Make a Difference -->
-      <div class="px-8 flex items-center gap-6">
-        <div class="w-20 h-20 rounded-full bg-amber-900 flex items-center justify-center flex-shrink-0">
-          <img src="assets/icons/care.png" alt="Care" class="w-14 h-14">
+      <div class="px-8 flex items-center justify-center gap-5">
+        <div class="w-20 h-20 rounded-full bg-gradient-to-br from-amber-700 to-amber-900 flex items-center justify-center flex-shrink-0 shadow-lg">
+          <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+          </svg>
         </div>
         <div class="flex-1">
-          <div class="font-barlow-condensed text-2xl font-black uppercase text-white mb-3">Make a Difference Today</div>
-          <div class="text-sm text-gray-300 mb-4 leading-relaxed">Your support helps build a safer community for everyone</div>
-          <button class="bg-ssop-red text-white font-barlow-condensed font-black text-sm tracking-wider uppercase px-8 py-3 hover:bg-red-700 transition-colors">Make a Donation</button>
+          <div class="font-barlow-condensed text-lg font-black uppercase text-white mb-2 leading-tight tracking-wide">Make a Difference Today</div>
+          <div class="text-xs text-gray-400 mb-4 leading-relaxed">Your support helps build safer communities for everyone.</div>
+          <button class="bg-ssop-red text-white font-barlow-condensed font-black text-xs tracking-wider uppercase px-8 py-3 hover:bg-red-700 transition-colors">Make a Donation</button>
         </div>
       </div>
     </div>
