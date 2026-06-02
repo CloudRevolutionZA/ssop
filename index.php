@@ -445,12 +445,12 @@ require_once __DIR__ . '/includes/header.php';
           </div>
         </div>
         
-        <!-- 8+ Years -->
+        <!-- 70 -->
         <div class="px-8 py-4 flex items-center gap-6">
           <img src="assets/icons/community.png" alt="Community" class="w-16 h-16 flex-shrink-0">
           <div>
-            <div class="font-barlow-condensed text-4xl font-black text-white mb-2">8+</div>
-            <div class="text-sm text-gray-400 uppercase font-barlow-condensed font-black">Years of Active<br>Service</div>
+            <div class="font-barlow-condensed text-4xl font-black text-white mb-2">70</div>
+            <div class="text-sm text-gray-400 uppercase font-barlow-condensed font-black">Community CCTV Cameras installed</div>
           </div>
         </div>
         

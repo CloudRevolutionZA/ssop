@@ -1,0 +1,19 @@
+warning: in the working copy of '.htaccess', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'about.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'config/config.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'contact.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'get-involved.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'includes/components.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'includes/footer.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'includes/functions.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'includes/header.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'includes/navigation.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'process-contact.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'projects.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'what-we-do.php', LF will be replaced by CRLF the next time Git touches it
+ config/config.php |   2 [32m+[m[31m-[m
+ index.html        | 249 [32m+++++++++++++++++++++++++++[m[31m---------------------------[m
+ index.php         |   6 [32m+[m[31m-[m
+ 3 files changed, 128 insertions(+), 129 deletions(-)
