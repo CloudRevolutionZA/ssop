@@ -11,7 +11,7 @@ define('SITE_TITLE_SUFFIX', ' – Safer Communities. Stronger Together.');
 
 // Contact Information
 define('PHONE_NUMBER', '0100210178');
-define('PHONE_DISPLAY', '010 021 0178');
+define('PHONE_DISPLAY', '0790194931);
 
 // Paths
 define('BASE_PATH', dirname(__DIR__));
