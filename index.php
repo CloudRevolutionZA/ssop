@@ -141,7 +141,7 @@ require_once __DIR__ . '/includes/header.php';
             </div>
             <div class="font-barlow-condensed text-xs md:text-sm font-black uppercase text-ssop-red">Operation Co-Ordination Center (OCC)</div>
           </div>
-          <div class="text-xs md:text-sm text-gray-400 leading-relaxed">Our 24/7 OCC receives incidents, monitors our CCTV network and dispatches resources efficiently.</div>
+          <div class="text-xs md:text-sm text-gray-400 leading-relaxed">Our 24/7 OCC receives incidents, Monitors incident-based alerts on our CCTV networks and Coordinates resources efficiently.</div>
         </div>
       </div>
       <div class="bg-ssop-black border border-gray-700 rounded overflow-hidden flex flex-col hover:border-gray-600 transition-colors">
@@ -151,7 +151,7 @@ require_once __DIR__ . '/includes/header.php';
             <div class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-ssop-red flex items-center justify-center flex-shrink-0" aria-hidden="true">
               <svg class="w-5 h-5 md:w-6 md:h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
             </div>
-            <div class="font-barlow-condensed text-xs md:text-sm font-black uppercase text-ssop-red">Community CCTV Network</div>
+            <div class="font-barlow-condensed text-xs md:text-sm font-black uppercase text-ssop-red">SSOP Community CCTV Network</div>
           </div>
           <div class="text-xs md:text-sm text-gray-400 leading-relaxed">Expanding CCTV coverage across Roodepoort through community participation and support.</div>
         </div>
@@ -296,7 +296,7 @@ require_once __DIR__ . '/includes/header.php';
           <img src="assets/icons/headphones.png" alt="Headphones" class="w-full h-full object-contain">
         </div>
         <div class="font-barlow-condensed text-xs md:text-sm font-black uppercase text-gray-900 mb-1 md:mb-2">OCC Verifies &<br>Dispatches</div>
-        <div class="text-xs md:text-sm text-gray-600 leading-tight">Information is verified and the closest unit is dispatched.</div>
+        <div class="text-xs md:text-sm text-gray-600 leading-tight">Information is verified and the closest responders are requested to attend.</div>
       </div>
       
       <!-- Dotted line - Hidden on mobile -->
@@ -324,7 +324,7 @@ require_once __DIR__ . '/includes/header.php';
           <img src="assets/icons/registerednpc.png" alt="Registered NPC" class="w-full h-full object-contain">
         </div>
         <div class="font-barlow-condensed text-xs md:text-sm font-black uppercase text-gray-900 mb-1 md:mb-2">Coordination<br>with Authorities</div>
-        <div class="text-xs md:text-sm text-gray-600 leading-tight">We work with state players as needed.</div>
+        <div class="text-xs md:text-sm text-gray-600 leading-tight">We collaborate with all relevant authorities including Law Enforcement , Private Security , Emergency Medical Services , Fire & Disaster Management.</div>
       </div>
     </div>
   </div>
@@ -338,22 +338,22 @@ require_once __DIR__ . '/includes/header.php';
       <div class="text-xs md:text-sm text-gray-300 leading-relaxed mb-6 md:mb-8">Our dedicated team of volunteer controllers monitor incidents, our CCTV network and coordinate responses with professionalism and care.</div>
       
       <!-- Contact Buttons -->
-      <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-0">
-        <a href="tel:<?php echo PHONE_NUMBER; ?>" class="flex items-center gap-2 md:gap-3 py-3 md:py-4 hover:opacity-80 transition-opacity flex-1 border border-gray-700 sm:border-none px-4 sm:px-0 rounded sm:rounded-none">
+      <div class="flex flex-col gap-3">
+        <!-- Landline -->
+        <a href="tel:010 021 0178" class="flex items-center gap-2 md:gap-3 py-3 md:py-4 hover:opacity-80 transition-opacity border border-gray-700 px-4 rounded">
           <img src="assets/icons/phone_white.png" alt="Phone" class="w-6 h-6 md:w-8 md:h-8 flex-shrink-0">
           <div>
-            <div class="text-xs text-gray-400 uppercase tracking-wider font-barlow-condensed font-black">Call</div>
-            <div class="font-barlow-condensed font-black text-ssop-white text-base md:text-lg"><?php echo PHONE_NUMBER; ?></div>
+            <div class="text-xs text-gray-400 uppercase tracking-wider font-barlow-condensed font-black">Landline</div>
+            <div class="font-barlow-condensed font-black text-ssop-white text-base md:text-lg">010 021 0178</div>
           </div>
         </a>
         
-        <div class="hidden sm:block h-12 md:h-16 w-px bg-gray-600 mx-4 md:mx-6"></div>
-        
-        <a href="https://wa.me/<?php echo str_replace([' ', '+', '-'], '', PHONE_NUMBER); ?>" class="flex items-center gap-2 md:gap-3 py-3 md:py-4 hover:opacity-80 transition-opacity flex-1 border border-gray-700 sm:border-none px-4 sm:px-0 rounded sm:rounded-none">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/27790194931" class="flex items-center gap-2 md:gap-3 py-3 md:py-4 hover:opacity-80 transition-opacity border border-gray-700 px-4 rounded">
           <img src="assets/icons/whatsapp_white.png" alt="WhatsApp" class="w-6 h-6 md:w-8 md:h-8 flex-shrink-0">
           <div>
             <div class="text-xs text-gray-400 uppercase tracking-wider font-barlow-condensed font-black">WhatsApp</div>
-            <div class="font-barlow-condensed font-black text-ssop-white text-base md:text-lg"><?php echo str_replace([' ', '+', '-'], '', PHONE_NUMBER); ?></div>
+            <div class="font-barlow-condensed font-black text-ssop-white text-base md:text-lg">079 019 4931</div>
           </div>
         </a>
       </div>
@@ -453,7 +453,7 @@ require_once __DIR__ . '/includes/header.php';
           <img src="assets/icons/cctv_white.png" alt="CCTV" class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0">
           <div>
             <div class="font-barlow-condensed text-3xl md:text-4xl font-black text-white mb-1 md:mb-2">150+</div>
-            <div class="text-xs md:text-sm text-gray-400 uppercase font-barlow-condensed font-black">CCTV Cameras<br>and Growing</div>
+            <div class="text-xs md:text-sm text-gray-400 uppercase font-barlow-condensed font-black">CCTV Cameras<br>and Growing Serving over 6500 residents</div>
           </div>
         </div>
         

@@ -22,10 +22,10 @@ define('IMAGES_PATH', ASSETS_PATH . '/images');
 // Navigation Menu Items
 $navItems = [
     ['url' => 'index.php', 'label' => 'Home'],
-    ['url' => 'about.php', 'label' => 'About USP'],
+    ['url' => 'about.php', 'label' => 'About Us'],
     ['url' => 'what-we-do.php', 'label' => 'What We Do'],
-    ['url' => 'projects.php', 'label' => 'Our Projects'],
-    ['url' => 'get-involved.php', 'label' => 'Get Involved'],
+    ['url' => 'projects.php', 'label' => 'Our Community Projects'],
+    ['url' => 'get-involved.php', 'label' => 'Become a Responder'],
     ['url' => 'contact.php', 'label' => 'Contact']
 ];
 
