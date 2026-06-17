@@ -245,21 +245,21 @@ require_once __DIR__ . '/includes/header.php';
 <!-- IN COLLABORATION WITH -->
 <section class="bg-ssop-black w-full py-6 md:py-12">
   <!-- Section Title with Border Cutout -->
-  <div class="px-4 md:px-8 lg:px-16 xl:px-24 mb-4 md:mb-6">
+  <div class="px-4 md:px-8 lg:px-16 xl:px-24 mb-6 md:mb-8">
     <div class="relative border-t border-gray-700 pt-0">
       <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-ssop-black px-4 md:px-6">
-        <div class="font-barlow-condensed text-base md:text-xl font-black tracking-widest uppercase text-white">In Collaboration With</div>
+        <div class="font-barlow-condensed text-sm md:text-xl font-black tracking-widest uppercase text-white whitespace-nowrap">In Collaboration With</div>
       </div>
     </div>
   </div>
   
   <div class="px-4 md:px-8 lg:px-16 xl:px-24">
-    <div class="flex gap-3 md:gap-4 lg:gap-6 xl:gap-8 justify-center items-center">
+    <div class="flex flex-wrap gap-3 md:gap-4 lg:gap-6 xl:gap-8 justify-center items-center">
       <?php
       // Display all 8 collaborator logos
       for ($i = 1; $i <= 8; $i++) {
         echo '<div class="flex-shrink-0 flex items-center justify-center">';
-        echo '<img src="assets/images/collaborator' . $i . '.png" alt="Collaborator ' . $i . '" class="h-12 md:h-16 lg:h-24 xl:h-32 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity">';
+        echo '<img src="assets/images/collaborator' . $i . '.png" alt="Collaborator ' . $i . '" class="h-10 md:h-16 lg:h-24 xl:h-32 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity">';
         echo '</div>';
       }
       ?>
