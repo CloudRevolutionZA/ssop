@@ -40,7 +40,6 @@ $currentPage = basename($_SERVER['PHP_SELF']);
         </svg>
         REPORT AN INCIDENT
       </a>
-      <span class="text-xs text-gray-500 font-light">For non-urgent reports or inquiries, <a href="contact.php" class="text-gray-500 hover:text-ssop-red transition-colors underline">contact us</a></span>
     </div>
     
     <!-- Mobile/Tablet Right Section -->
@@ -94,12 +93,6 @@ $currentPage = basename($_SERVER['PHP_SELF']);
         </li>
       <?php endforeach; ?>
     </ul>
-    
-    <!-- Mobile Contact Info -->
-    <div class="px-6 py-4 border-t border-gray-800">
-      <p class="text-xs text-gray-500 mb-2">For non-urgent reports or inquiries:</p>
-      <a href="contact.php" class="text-sm text-ssop-red hover:text-ssop-red-dark transition-colors font-barlow-condensed font-bold uppercase">Contact Us</a>
-    </div>
   </div>
 
   <script>
