@@ -274,7 +274,7 @@ require_once __DIR__ . '/includes/header.php';
           </svg>
         </div>
         <div class="font-barlow-condensed text-3xl font-black text-white mb-2">24/7</div>
-        <div class="text-xs text-gray-400 uppercase tracking-wider leading-relaxed">OPERATIONAL<br>COORDINATION CENTRE</div>
+        <div class="text-xs text-gray-400 uppercase tracking-wider leading-relaxed">OPERATION<br>CO-ORDINATION CENTER</div>
       </div>
 
       <!-- Impact 3 -->

@@ -43,7 +43,7 @@ require_once __DIR__ . '/includes/header.php';
         <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-3">SSOP NPC provides the following services:</p>
         <ul class="list-disc list-inside text-gray-400 text-sm md:text-base space-y-2 ml-4">
           <li>Active patrol operations in designated areas</li>
-          <li>24/7 Operations Command Centre (OCC) monitoring</li>
+          <li>24/7 Operation Co-Ordination Center (OCC) monitoring</li>
           <li>CCTV network monitoring and management</li>
           <li>Emergency first response assistance</li>
           <li>Community engagement and safety programs</li>

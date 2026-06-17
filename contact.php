@@ -104,7 +104,7 @@ require_once __DIR__ . '/includes/header.php';
         <div class="font-barlow-condensed text-sm font-bold text-white leading-relaxed mb-3">
           SSOP NPC OCC,<br>Wilrogate Centre,<br>Wilropark, Roodepoort,<br>JHB 1724
         </div>
-        <p class="text-xs text-gray-400 leading-relaxed">Our Operational Coordination Centre (OCC) location.</p>
+        <p class="text-xs text-gray-400 leading-relaxed">Our Operation Co-Ordination Center (OCC) location.</p>
       </div>
 
       <!-- OCC 24/7 -->
@@ -115,7 +115,7 @@ require_once __DIR__ . '/includes/header.php';
             <polyline points="12 6 12 12 16 14"/>
           </svg>
         </div>
-        <h3 class="font-barlow-condensed text-base font-black uppercase tracking-wider text-white mb-4">OPERATIONAL<br>COORDINATION CENTRE</h3>
+        <h3 class="font-barlow-condensed text-base font-black uppercase tracking-wider text-white mb-4">OPERATION<br>CO-ORDINATION CENTER</h3>
         <div class="font-barlow-condensed text-4xl font-black text-ssop-red mb-3">24/7</div>
         <p class="text-xs text-gray-400 leading-relaxed">Our OCC operates 24/7 to coordinate resources and respond effectively.</p>
       </div>
@@ -257,7 +257,7 @@ require_once __DIR__ . '/includes/header.php';
           </div>
           <div class="flex-1">
             <h4 class="font-barlow-condensed text-base font-black uppercase text-white mb-2 tracking-wide">EMERGENCY?</h4>
-            <p class="text-xs text-gray-400 leading-relaxed">If this is an emergency, please call our Operational Coordination Centre immediately.</p>
+            <p class="text-xs text-gray-400 leading-relaxed">If this is an emergency, please call our Operation Co-Ordination Center immediately.</p>
           </div>
           <div class="text-right flex-shrink-0">
             <div class="font-barlow-condensed text-4xl font-black text-ssop-red leading-none mb-1">24/7</div>

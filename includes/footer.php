@@ -86,7 +86,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     <!-- Registered NPC Column -->
     <div>
       <div class="font-barlow-condensed text-xs font-black tracking-widest uppercase text-white mb-2">Registered NPC</div>
-      <div class="font-barlow-condensed text-lg font-black text-white">2017/019873/08</div>
+      <div class="font-barlow-condensed text-lg font-black text-white">2025/734114/08</div>
     </div>
   </div>
 

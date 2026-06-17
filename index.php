@@ -73,7 +73,7 @@ require_once __DIR__ . '/includes/header.php';
   <div class="flex items-center gap-3 p-5 md:p-6">
     <img src="assets/icons/responsetime.png" alt="" class="w-10 h-10 md:w-12 md:h-12 opacity-70 flex-shrink-0" aria-hidden="true" width="48" height="48" loading="lazy">
     <div>
-      <div class="font-barlow-condensed text-2xl md:text-3xl font-black text-ssop-white">±3.5 MIN</div>
+      <div class="font-barlow-condensed text-2xl md:text-3xl font-black text-ssop-white">±5 MIN</div>
       <div class="font-barlow-condensed text-xs md:text-sm font-black tracking-wider uppercase text-ssop-grey">Average Response Time</div>
     </div>
   </div>
@@ -95,7 +95,7 @@ require_once __DIR__ . '/includes/header.php';
     <img src="assets/icons/registrednpc_white.png" alt="" class="w-10 h-10 md:w-12 md:h-12 opacity-70 flex-shrink-0" aria-hidden="true" width="48" height="48" loading="lazy">
     <div>
       <div class="font-barlow-condensed text-sm md:text-base font-black tracking-wider uppercase text-ssop-white leading-tight">Registered NPC</div>
-      <div class="font-barlow-condensed text-xs md:text-sm font-black tracking-wider uppercase text-ssop-grey">2017/219863/08</div>
+      <div class="font-barlow-condensed text-xs md:text-sm font-black tracking-wider uppercase text-ssop-grey">2025/734114/08</div>
     </div>
   </div>
   <div class="flex items-center gap-3 p-5 md:p-6">
@@ -139,7 +139,7 @@ require_once __DIR__ . '/includes/header.php';
             <div class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-ssop-red flex items-center justify-center flex-shrink-0" aria-hidden="true">
               <svg class="w-5 h-5 md:w-6 md:h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
             </div>
-            <div class="font-barlow-condensed text-xs md:text-sm font-black uppercase text-ssop-red">Operations Command Centre (OCC)</div>
+            <div class="font-barlow-condensed text-xs md:text-sm font-black uppercase text-ssop-red">Operation Co-Ordination Center (OCC)</div>
           </div>
           <div class="text-xs md:text-sm text-gray-400 leading-relaxed">Our 24/7 OCC receives incidents, monitors our CCTV network and dispatches resources efficiently.</div>
         </div>
@@ -332,7 +332,7 @@ require_once __DIR__ . '/includes/header.php';
   <!-- OPERATIONS COMMAND CENTRE - Dark Side with Image -->
   <div class="bg-ssop-black grid grid-cols-1 md:grid-cols-2 gap-0">
     <div class="px-4 md:px-8 lg:px-16 py-8 md:py-14">
-      <div class="font-barlow-condensed text-xl md:text-2xl font-black uppercase text-ssop-red mb-2">Operations Command Centre (OCC)</div>
+      <div class="font-barlow-condensed text-xl md:text-2xl font-black uppercase text-ssop-red mb-2">Operation Co-Ordination Center (OCC)</div>
       <div class="font-barlow-condensed text-sm md:text-base font-bold uppercase text-gray-400 mb-4 md:mb-6">The Nerve Centre of Our Operations</div>
       
       <div class="text-xs md:text-sm text-gray-300 leading-relaxed mb-6 md:mb-8">Our dedicated team of volunteer controllers monitor incidents, our CCTV network and coordinate responses with professionalism and care.</div>

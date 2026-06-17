@@ -121,9 +121,9 @@ require_once __DIR__ . '/includes/header.php';
               <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
           </div>
-          <h3 class="font-barlow-condensed text-lg md:text-xl font-bold uppercase text-white mb-3 text-center md:text-left">24/7 OPERATIONAL COORDINATION CENTRE</h3>
+          <h3 class="font-barlow-condensed text-lg md:text-xl font-bold uppercase text-white mb-3 text-center md:text-left">24/7 OPERATION CO-ORDINATION CENTER</h3>
           <p class="text-sm text-gray-400 text-center md:text-left">
-            Our Operations Control Centre (OCC) coordinates all first responder deployments and field operations—24 hours, 7 days a week—to ensure quick and efficient incident management.
+            Our Operation Co-Ordination Center (OCC) coordinates all first responder deployments and field operations—24 hours, 7 days a week—to ensure quick and efficient incident management.
           </p>
         </div>
       </div>
@@ -271,7 +271,7 @@ require_once __DIR__ . '/includes/header.php';
           </svg>
         </div>
         <p class="font-barlow-condensed text-4xl md:text-5xl font-black text-white mb-2">24/7</p>
-        <p class="text-gray-400 uppercase font-semibold">Operational<br>Coordination Centre</p>
+        <p class="text-gray-400 uppercase font-semibold">Operation<br>Co-Ordination Center</p>
       </div>
       
       <!-- Dedicated First Responders -->
