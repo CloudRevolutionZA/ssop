@@ -13,7 +13,7 @@ require_once __DIR__ . '/includes/header.php';
 ?>
 
 <!-- HERO SECTION -->
-<section class="bg-ssop-black py-12 md:py-20 px-4 md:px-8 lg:px-16 xl:px-24 relative overflow-hidden" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/images/header2.png') center/cover no-repeat;">
+<section id="main-content" class="bg-ssop-black py-12 md:py-20 px-4 md:px-8 lg:px-16 xl:px-24 relative overflow-hidden" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/images/header2.png') center/cover no-repeat;">
   <div class="max-w-6xl mx-auto">
     <h1 class="font-barlow-condensed text-4xl md:text-6xl font-black uppercase text-white mb-6">ABOUT US</h1>
     <p class="text-base md:text-lg text-gray-300 leading-relaxed max-w-2xl">
@@ -69,7 +69,7 @@ require_once __DIR__ . '/includes/header.php';
 
         <!-- Team Image -->
         <div>
-          <img src="assets/images/community.png" alt="SSOP Team" class="w-full h-64 md:h-96 object-cover rounded-lg">
+          <img src="assets/images/community.png" alt="SSOP Team" class="w-full h-64 md:h-96 object-cover rounded-lg" width="800" height="600" loading="lazy">
         </div>
 
       </div>
@@ -146,8 +146,8 @@ require_once __DIR__ . '/includes/header.php';
 
     <!-- Timeline -->
     <div class="relative">
-      <!-- Horizontal line connecting circles (desktop only) -->
-      <div class="hidden lg:block absolute top-12 left-0 right-0 h-px bg-gray-700" style="transform: translateY(-50%);"></div>
+      <!-- Horizontal line connecting circles (desktop only) - stops before last item -->
+      <div class="hidden lg:block absolute top-12 h-px bg-gray-700" style="left: 0; right: calc(100% / 6); transform: translateY(-50%);"></div>
       
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 lg:gap-4">
         

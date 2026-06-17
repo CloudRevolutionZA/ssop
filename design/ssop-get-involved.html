@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SSOP – Get Involved</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --red: #C8102E;
+    --black: #0a0a0a;
+    --dark: #111111;
+    --dark2: #1a1a1a;
+    --white: #ffffff;
+    --grey: #aaaaaa;
+    --light-grey: #cccccc;
+    --border: #2a2a2a;
+  }
+
+  body {
+    font-family: 'Barlow', sans-serif;
+    background: var(--black);
+    color: var(--white);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* ── NAV ── */
+  nav {
+    background: var(--black);
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 32px; height: 72px;
+    position: sticky; top: 0; z-index: 100;
+  }
+
+  .logo-box {
+    border: 2px dashed #444;
+    width: 64px; height: 64px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900; font-size: 11px;
+    text-align: center; color: #555;
+    letter-spacing: 0.05em; text-transform: uppercase;
+    flex-shrink: 0; margin: 4px 0;
+  }
+
+  .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+
+  .nav-links a {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700; font-size: 13px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--light-grey); text-decoration: none; transition: color 0.15s;
+  }
+  .nav-links a:hover { color: var(--white); }
+  .nav-links a.active { color: var(--red); }
+
+  .nav-right { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+
+  .nav-cta {
+    background: var(--red); color: var(--white);
+    padding: 10px 18px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900; font-size: 13px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    text-decoration: none; display: flex; align-items: center; gap: 8px;
+    transition: background 0.15s; white-space: nowrap;
+  }
+  .nav-cta:hover { background: #a50d26; }
+  .nav-sub { font-size: 10px; color: #555; letter-spacing: 0.05em; }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative; min-height: 320px;
+    display: flex; align-items: center;
+    padding: 56px 48px; overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(to right, rgba(10,10,10,0.96) 36%, rgba(10,10,10,0.4) 100%),
+      url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=1200&q=80') center/cover no-repeat;
+    z-index: 0;
+  }
+
+  .hero-content { position: relative; z-index: 1; max-width: 440px; }
+
+  .hero-content h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900; font-size: 72px;
+    text-transform: uppercase; line-height: 0.95;
+    letter-spacing: -0.01em; margin-bottom: 12px; color: var(--white);
+  }
+
+  .hero-tagline {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700; font-size: 20px;
+    color: var(--red); text-transform: uppercase;
+    letter-spacing: 0.05em; margin-bottom: 20px;
+  }
+
+  .hero-content p { color: var(--light-grey); font-size: 14px; line-height: 1.7; }
+
+  /* ── SECTION HEADING ── */
+  .section-heading { text-align: center; padding: 48px 32px 36px; }
+
+  .section-heading h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900; font-size: 28px;
+    text-transform: uppercase; letter-spacing: 0.06em;
+    display: flex; align-items: center; justify-content: center; gap: 12px;
+    color: var(--white);
+  }
+
+  .section-heading h2::before,
+  .section-heading h2::after {
+    content: ''; flex: 1; max-width: 200px;
+    height: 1px; background: var(--border);
+  }
+
+  .accent { color: var(--red); }
+
+  /* ── HOW GRID ── */
+  .how-wrap { padding: 0 32px 56px; max-width: 1140px; margin: 0 auto; }
+
+  .how-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+
+  .how-card {
+    background: var(--dark); border: 1px solid var(--border);
+    padding: 24px 16px 20px;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+
+  .how-card svg { width: 44px; height: 44px; fill: none; stroke: var(--red); stroke-width: 1.6; }
+
+  .how-card h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800; font-size: 13px;
+    text-transform: uppercase; letter-spacing: 0.05em;
+    color: var(--white); line-height: 1.2;
+  }
+
+  .how-card p { font-size: 11.5px; color: var(--grey); line-height: 1.6; }
+
+  /* ── WHO SECTION ── */
+  .who-section {
+    background: var(--dark);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 52px 32px;
+  }
+
+  .who-inner {
+    max-width: 1140px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 48px; align-items: center;
+  }
+
+  .who-left h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900; font-size: 28px;
+    text-transform: uppercase; color: var(--white); margin-bottom: 28px;
+    letter-spacing: 0.04em;
+  }
+
+  .who-bullets { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+
+  .who-bullets li {
+    display: flex; align-items: flex-start; gap: 12px;
+    font-size: 14px; color: var(--light-grey); line-height: 1.5;
+  }
+
+  .who-bullets li svg {
+    width: 20px; height: 20px; flex-shrink: 0;
+    fill: none; stroke: var(--red); stroke-width: 2; margin-top: 2px;
+  }
+
+  .who-img {
+    width: 100%; height: 320px; object-fit: cover;
+    display: block; filter: brightness(0.85) saturate(0.9);
+  }
+
+  /* ── CTA STRIP ── */
+  .cta-wrap { padding: 32px 32px; }
+
+  .cta-strip {
+    background: var(--dark2); border: 1px solid var(--border);
+    max-width: 1140px; margin: 0 auto;
+    padding: 36px 40px;
+    display: flex; align-items: center; justify-content: space-between; gap: 28px;
+  }
+
+  .cta-strip-left { display: flex; align-items: center; gap: 24px; }
+
+  .cta-circle {
+    width: 80px; height: 80px; border: 2px solid var(--border); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .cta-circle svg { width: 36px; height: 36px; fill: none; stroke: var(--red); stroke-width: 1.5; }
+
+  .cta-strip h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900; font-size: 26px;
+    text-transform: uppercase; color: var(--white); margin-bottom: 8px;
+  }
+  .cta-strip p { font-size: 13px; color: var(--grey); line-height: 1.6; max-width: 460px; }
+
+  .cta-strip-right { display: flex; flex-direction: column; align-items: center; gap: 8px; flex-shrink: 0; }
+
+  .cta-btn {
+    background: var(--red); color: var(--white); text-decoration: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900; font-size: 15px;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    padding: 14px 28px; display: flex; align-items: center; gap: 10px;
+    transition: background 0.15s;
+  }
+  .cta-btn:hover { background: #a50d26; }
+  .cta-btn svg { width: 18px; height: 18px; fill: #fff; }
+  .cta-sub { font-size: 11px; color: #555; }
+
+  /* ── GET IN TOUCH ── */
+  .touch-section {
+    background: var(--dark);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 52px 32px;
+  }
+
+  .touch-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900; font-size: 28px;
+    text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--white); text-align: center;
+    display: flex; align-items: center; justify-content: center; gap: 12px;
+    margin-bottom: 44px;
+  }
+  .touch-title::before,
+  .touch-title::after { content: ''; flex: 1; max-width: 200px; height: 1px; background: var(--border); }
+
+  .touch-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    max-width: 860px; margin: 0 auto;
+    border: 1px solid var(--border);
+  }
+
+  .touch-card {
+    display: flex; flex-direction: column; align-items: center;
+    text-align: center; padding: 32px 20px;
+    border-right: 1px solid var(--border);
+    gap: 10px;
+  }
+  .touch-card:last-child { border-right: none; }
+
+  .touch-card-icon {
+    width: 52px; height: 52px;
+    border: 2px solid var(--red); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 4px;
+  }
+  .touch-card-icon svg { width: 22px; height: 22px; fill: none; stroke: var(--red); stroke-width: 2; }
+
+  .touch-card h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800; font-size: 13px;
+    text-transform: uppercase; letter-spacing: 0.07em; color: var(--white);
+  }
+
+  .touch-card p { font-size: 12.5px; color: var(--grey); line-height: 1.6; }
+
+  .social-links { display: flex; gap: 8px; justify-content: center; }
+  .social-links a {
+    width: 30px; height: 30px; border: 1px solid #333; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: #777; text-decoration: none; font-size: 12px;
+    font-weight: 900; font-family: 'Barlow Condensed', sans-serif;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .social-links a:hover { border-color: var(--red); color: var(--red); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--black); border-top: 1px solid var(--border);
+    padding: 44px 32px 20px;
+  }
+
+  .footer-grid {
+    display: grid; grid-template-columns: 80px 1fr 1fr 1fr 120px;
+    gap: 32px; padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 20px; align-items: start;
+  }
+
+  .footer-logo {
+    border: 2px dashed #333; width: 80px; height: 68px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900; font-size: 10px;
+    text-align: center; color: #444;
+    letter-spacing: 0.05em; text-transform: uppercase; line-height: 1.4;
+  }
+
+  .footer-col h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800; font-size: 12px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--white); margin-bottom: 14px;
+  }
+
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 7px; }
+  .footer-col ul li a { font-size: 12px; color: #666; text-decoration: none; transition: color 0.15s; }
+  .footer-col ul li a:hover { color: var(--white); }
+  .footer-col ul li a.red { color: var(--red); }
+
+  .contact-item { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 8px; font-size: 12px; color: #666; }
+  .contact-item svg { width: 13px; height: 13px; fill: var(--red); flex-shrink: 0; margin-top: 2px; }
+
+  .footer-social { display: flex; gap: 8px; }
+  .footer-social a {
+    width: 30px; height: 30px; border: 1px solid #333; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: #777; text-decoration: none; font-size: 12px;
+    font-weight: 900; font-family: 'Barlow Condensed', sans-serif;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .footer-social a:hover { border-color: var(--red); color: var(--red); }
+
+  .footer-npc { text-align: right; align-self: end; }
+  .npc-label { font-family: 'Barlow Condensed', sans-serif; font-size: 10px; color: #444; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 4px; }
+  .npc-number { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 14px; color: var(--white); letter-spacing: 0.06em; }
+
+  .footer-bottom { text-align: center; font-size: 11px; color: #444; letter-spacing: 0.05em; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo-box">YOUR<br>LOGO<br>HERE</div>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">What We Do</a></li>
+    <li><a href="#">Our Projects</a></li>
+    <li><a href="#" class="active">Get Involved</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#" class="nav-cta">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="#fff"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+      Report an Incident
+    </a>
+    <span class="nav-sub">For non-urgent reports or inquiries, contact us</span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1>Get Involved</h1>
+    <p class="hero-tagline">Together, We Can Make a Difference.</p>
+    <p>Our communities are stronger when we work together. Whether you have time, skills, resources or simply a passion for making a change – there is a place for you at SSOP NPC.</p>
+  </div>
+</section>
+
+<!-- HOW YOU CAN GET INVOLVED -->
+<div class="section-heading">
+  <h2>HOW YOU CAN <span class="accent">&nbsp;GET INVOLVED</span></h2>
+</div>
+
+<div class="how-wrap">
+  <div class="how-grid">
+
+    <div class="how-card">
+      <svg viewBox="0 0 48 48">
+        <circle cx="16" cy="13" r="6" stroke-width="2"/>
+        <circle cx="32" cy="13" r="6" stroke-width="2"/>
+        <path d="M4 36c0-8 5-12 12-12s8 3 8 3" stroke-width="2"/>
+        <path d="M20 36c0-8 5-12 12-12s12 4 12 12" stroke-width="2"/>
+      </svg>
+      <h3>Volunteer</h3>
+      <p>Join our team of dedicated volunteers and be the difference in someone's life.</p>
+    </div>
+
+    <div class="how-card">
+      <svg viewBox="0 0 48 48">
+        <path d="M24 8c-4-6-14-5-14 5 0 8 14 18 14 18s14-10 14-18c0-10-10-11-14-5z" stroke-width="2"/>
+        <path d="M10 36h28l2 6H8z" stroke-width="2"/>
+      </svg>
+      <h3>Donate</h3>
+      <p>Your donations help us fund projects, equipment, training and community initiatives.</p>
+    </div>
+
+    <div class="how-card">
+      <svg viewBox="0 0 48 48">
+        <path d="M8 30c0 0 6-8 16-8s16 8 16 8" stroke-width="2" stroke-linecap="round"/>
+        <path d="M14 22l-4-4 4-4M34 22l4-4-4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h3>Partner With Us</h3>
+      <p>Collaborate with us as a business, organisation or other stakeholder to create safer communities.</p>
+    </div>
+
+    <div class="how-card">
+      <svg viewBox="0 0 48 48">
+        <circle cx="36" cy="10" r="5" stroke-width="2"/>
+        <circle cx="36" cy="38" r="5" stroke-width="2"/>
+        <circle cx="12" cy="24" r="5" stroke-width="2"/>
+        <line x1="17" y1="22" x2="31" y2="12" stroke-width="2"/>
+        <line x1="17" y1="26" x2="31" y2="36" stroke-width="2"/>
+      </svg>
+      <h3>Spread The Word</h3>
+      <p>Help raise awareness by sharing our mission and encouraging others to get involved.</p>
+    </div>
+
+    <div class="how-card">
+      <svg viewBox="0 0 48 48">
+        <path d="M24 8l4 8 9 1.3-6.5 6.3 1.5 9L24 28l-8 4.6 1.5-9L11 17.3l9-1.3z" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M14 36v6M34 36v6M10 42h28" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <h3>Skills &amp; Training</h3>
+      <p>Share your skills or expertise to help build capacity within our team and communities.</p>
+    </div>
+
+    <div class="how-card">
+      <svg viewBox="0 0 48 48">
+        <rect x="8" y="16" width="32" height="22" rx="2" stroke-width="2"/>
+        <path d="M16 16v-4a8 8 0 0116 0v4" stroke-width="2"/>
+        <circle cx="24" cy="27" r="3" stroke-width="2"/>
+        <path d="M24 30v4" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <h3>In-Kind Support</h3>
+      <p>Support us with goods, services or equipment that can help us achieve our mission.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- WHO CAN GET INVOLVED -->
+<section class="who-section">
+  <div class="who-inner">
+    <div class="who-left">
+      <h2>Who Can <span class="accent">Get Involved</span>?</h2>
+      <ul class="who-bullets">
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Anyone with a passion for safer communities
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Individuals who want to volunteer their time
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Businesses and organisations
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Students and youth
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Retired professionals
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Everyone who believes in making a positive impact
+        </li>
+      </ul>
+    </div>
+    <div>
+      <img class="who-img"
+        src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=700&q=80"
+        alt="SSOP Community Team">
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-wrap">
+  <div class="cta-strip">
+    <div class="cta-strip-left">
+      <div class="cta-circle">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <div>
+        <h2>Make an Impact <span class="accent">Today</span></h2>
+        <p>Every action, no matter how small, contributes to building safer, stronger and more united communities. Get involved and be part of the change.</p>
+      </div>
+    </div>
+    <div class="cta-strip-right">
+      <a href="#" class="cta-btn">
+        Join Us Today
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <span class="cta-sub">Together, we are stronger.</span>
+    </div>
+  </div>
+</div>
+
+<!-- GET IN TOUCH -->
+<section class="touch-section">
+  <h2 class="touch-title">GET <span class="accent">&nbsp;IN TOUCH</span></h2>
+  <div class="touch-grid">
+
+    <div class="touch-card">
+      <div class="touch-card-icon">
+        <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+      </div>
+      <h3>Call Us</h3>
+      <p>011 024 2078<br>079 619 4453</p>
+    </div>
+
+    <div class="touch-card">
+      <div class="touch-card-icon">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </div>
+      <h3>Email Us</h3>
+      <p>info@ssop.org.za</p>
+    </div>
+
+    <div class="touch-card">
+      <div class="touch-card-icon">
+        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <h3>Visit Us</h3>
+      <p>Johannesburg,<br>South Africa</p>
+    </div>
+
+    <div class="touch-card">
+      <div class="touch-card-icon">
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      </div>
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#">f</a>
+        <a href="#" style="font-style:italic;">i</a>
+        <a href="#">w</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-logo">YOUR<br>LOGO<br>HERE</div></div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">What We Do</a></li>
+        <li><a href="#">Our Projects</a></li>
+        <li><a href="#" class="red">Get Involved</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        011 024 2078
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        079 619 4453
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        info@ssop.org.za
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Johannesburg, South Africa
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="footer-social" style="margin-bottom:24px;">
+        <a href="#">f</a>
+        <a href="#" style="font-style:italic;">i</a>
+        <a href="#">w</a>
+      </div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">POPIA Compliance</a></li>
+      </ul>
+    </div>
+    <div class="footer-npc">
+      <span class="npc-label">Registered NPC</span>
+      <span class="npc-number">2017/019873/08</span>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2025 SSOP NPC. All rights reserved.</div>
+</footer>
+
+</body>
+</html>

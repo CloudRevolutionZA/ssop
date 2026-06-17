@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us – SSOP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --red: #C8102E;
+    --black: #0a0a0a;
+    --dark: #111111;
+    --dark2: #1a1a1a;
+    --white: #ffffff;
+    --grey: #aaaaaa;
+    --light-grey: #cccccc;
+    --border: #2a2a2a;
+  }
+
+  body {
+    font-family: 'Barlow', sans-serif;
+    background: var(--black);
+    color: var(--white);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* ── NAV ── */
+  nav {
+    background: var(--black);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    height: 72px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .logo-box {
+    border: 2px dashed #444;
+    width: 64px; height: 64px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 11px;
+    text-align: center;
+    color: #555;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    flex-shrink: 0;
+    margin: 4px 0;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--light-grey);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .nav-links a:hover { color: var(--white); }
+  .nav-links a.active { color: var(--red); }
+
+  .nav-cta {
+    background: var(--red);
+    color: var(--white) !important;
+    padding: 10px 18px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.15s;
+    white-space: nowrap;
+  }
+  .nav-cta:hover { background: #a50d26; }
+
+  .nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+  }
+
+  .nav-sub {
+    font-size: 10px;
+    color: #555;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--black);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 340px;
+    overflow: hidden;
+  }
+
+  .hero-left {
+    padding: 60px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-left h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 72px;
+    text-transform: uppercase;
+    line-height: 0.95;
+    letter-spacing: -0.01em;
+    margin-bottom: 12px;
+  }
+
+  .hero-left .tagline {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--red);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+  }
+
+  .hero-left p {
+    color: var(--light-grey);
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 380px;
+    margin-bottom: 16px;
+  }
+
+  .hero-right {
+    position: relative;
+    overflow: hidden;
+    background: #111;
+  }
+
+  .hero-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.85;
+  }
+
+  .hero-right-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ssop-badge {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .ssop-badge .badge-main {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    color: var(--white);
+    line-height: 1;
+  }
+
+  .ssop-badge .badge-sub {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--red);
+  }
+
+  /* hero image overlay badges */
+  .hero-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    background: #1a1a1a;
+    overflow: hidden;
+  }
+
+  /* ── SECTION HEADING ── */
+  .section-heading {
+    text-align: center;
+    padding: 48px 32px 40px;
+    position: relative;
+  }
+
+  .section-heading h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .section-heading h2 .accent { color: var(--red); }
+
+  .heading-line {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  .heading-line::before,
+  .heading-line::after {
+    content: '';
+    height: 1px;
+    background: var(--red);
+    flex: 1;
+    max-width: 200px;
+  }
+
+  /* ── CONTACT CARDS GRID ── */
+  .contact-cards {
+    background: var(--dark);
+    padding: 0 32px 48px;
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .contact-card {
+    background: var(--dark2);
+    padding: 32px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .contact-card .icon {
+    width: 52px;
+    height: 52px;
+    border: 2px solid var(--red);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--red);
+    font-size: 22px;
+    margin-bottom: 4px;
+  }
+
+  .contact-card h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--white);
+  }
+
+  .contact-card .value {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .contact-card .value:hover { color: var(--red); }
+  .contact-card .value a { color: inherit; text-decoration: none; }
+
+  .contact-card p {
+    font-size: 12px;
+    color: var(--grey);
+    line-height: 1.5;
+  }
+
+  /* ── MAIN CONTENT AREA ── */
+  .main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 48px 32px;
+  }
+
+  .main-left { padding-right: 48px; }
+  .main-right { padding-left: 48px; border-left: 1px solid var(--border); }
+
+  /* ── FORM ── */
+  .section-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .red-line {
+    width: 48px;
+    height: 3px;
+    background: var(--red);
+    margin: 10px 0 16px;
+  }
+
+  .form-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 42px;
+    text-transform: uppercase;
+    line-height: 0.95;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+  }
+
+  .form-desc {
+    color: var(--grey);
+    font-size: 13px;
+    margin-bottom: 28px;
+    line-height: 1.6;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .form-row input,
+  .form-row select,
+  .form-row textarea {
+    background: transparent;
+    border: 1px solid #333;
+    color: var(--white);
+    padding: 14px 16px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.15s;
+    width: 100%;
+  }
+
+  .form-row input::placeholder,
+  .form-row textarea::placeholder { color: #555; }
+
+  .form-row input:focus,
+  .form-row select:focus,
+  .form-row textarea:focus { border-color: var(--red); }
+
+  .form-row select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    cursor: pointer;
+  }
+
+  .form-row select option { background: var(--dark2); color: var(--white); }
+
+  .form-row textarea { resize: vertical; min-height: 110px; }
+
+  .form-footer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+  }
+
+  .btn-submit {
+    background: var(--red);
+    color: var(--white);
+    border: none;
+    padding: 14px 24px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.15s;
+    white-space: nowrap;
+  }
+
+  .btn-submit:hover { background: #a50d26; }
+
+  .form-note {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.4;
+  }
+
+  /* ── RIGHT SIDE ── */
+  .service-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .service-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 42px;
+    text-transform: uppercase;
+    line-height: 0.95;
+    margin-bottom: 28px;
+    letter-spacing: -0.01em;
+  }
+
+  .service-title .accent { color: var(--red); }
+
+  /* Map */
+  .map-box {
+    background: #0d1117;
+    border: 1px solid var(--border);
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+
+  .map-box svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .map-label-top {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--white);
+    text-shadow: 0 0 20px rgba(0,0,0,0.8);
+    pointer-events: none;
+  }
+
+  .map-city {
+    position: absolute;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* Emergency box */
+  .emergency-box {
+    background: var(--dark2);
+    border: 1px solid var(--border);
+    padding: 20px 24px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .emergency-icon {
+    width: 48px;
+    height: 48px;
+    border: 2px solid var(--red);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--red);
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .emergency-text h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    letter-spacing: 0.05em;
+  }
+
+  .emergency-text p {
+    font-size: 11px;
+    color: var(--grey);
+    line-height: 1.4;
+  }
+
+  .emergency-numbers {
+    text-align: right;
+  }
+
+  .emergency-numbers .badge-247 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    color: var(--red);
+    line-height: 1;
+    display: block;
+  }
+
+  .emergency-numbers .num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--white);
+    display: block;
+    line-height: 1.4;
+  }
+
+  /* ── LETS WORK TOGETHER ── */
+  .letswork {
+    background: var(--dark);
+    border-top: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 200px;
+  }
+
+  .letswork-left {
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .letswork-icon {
+    width: 64px;
+    height: 64px;
+    border: 2px solid var(--red);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: var(--red);
+    margin-bottom: 8px;
+  }
+
+  .letswork-left h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .letswork-left h2 .accent { color: var(--red); }
+
+  .letswork-left p {
+    color: var(--grey);
+    font-size: 13px;
+    line-height: 1.6;
+    max-width: 400px;
+  }
+
+  .letswork-right {
+    position: relative;
+    overflow: hidden;
+    background: #111;
+    min-height: 220px;
+  }
+
+  .letswork-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.75;
+  }
+
+  .letswork-right-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 220px;
+    background: linear-gradient(135deg, #1c1c1c 0%, #111 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #080808;
+    border-top: 1px solid var(--border);
+    padding: 48px 32px 32px;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto 40px;
+  }
+
+  .footer-logo {
+    border: 2px dashed #333;
+    width: 80px; height: 80px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 11px;
+    text-align: center;
+    color: #444;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .footer-col h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 16px;
+  }
+
+  .footer-col ul { list-style: none; }
+
+  .footer-col ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer-col ul li a {
+    color: var(--grey);
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.15s;
+  }
+
+  .footer-col ul li a:hover { color: var(--red); }
+  .footer-col ul li a.red { color: var(--red); }
+
+  .footer-col .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: var(--grey);
+    line-height: 1.4;
+  }
+
+  .footer-col .contact-item span.ico {
+    color: var(--red);
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .social-links a {
+    width: 36px; height: 36px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--grey);
+    font-size: 14px;
+    text-decoration: none;
+    transition: border-color 0.15s, color 0.15s;
+  }
+
+  .social-links a:hover { border-color: var(--red); color: var(--red); }
+
+  .footer-npc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .npc-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 4px;
+  }
+
+  .npc-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: var(--white);
+  }
+
+  .footer-bottom {
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #444;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* SVG map path for Roodepoort approximate shape */
+  .map-svg-wrapper {
+    width: 100%;
+    height: 220px;
+    background: #0d1117;
+    position: relative;
+  }
+
+  .map-path {
+    fill: rgba(200, 16, 46, 0.25);
+    stroke: var(--red);
+    stroke-width: 2;
+  }
+
+  .road-line {
+    stroke: #2a2a2a;
+    stroke-width: 1;
+    fill: none;
+  }
+
+  .n1-label {
+    fill: #555;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .n1-circle {
+    fill: #222;
+    stroke: #555;
+    stroke-width: 1;
+  }
+</style>
+</head>
+<body>
+
+<!-- ── NAVIGATION ── -->
+<nav>
+  <div class="logo-box">YOUR<br>LOGO<br>HERE</div>
+
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">What We Do</a></li>
+    <li><a href="#">Our Projects</a></li>
+    <li><a href="#">Get Involved</a></li>
+    <li><a href="#" class="active">Contact</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <a href="tel:0100210178" class="nav-cta">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+      Report an Incident
+    </a>
+    <span class="nav-sub">For non-urgent reports or inquiries, contact us</span>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-left">
+    <h1>Contact Us</h1>
+    <div class="tagline">We're Here to Help.</div>
+    <p>Have a question, want to get involved, or need more information about our services or projects? Get in touch with us – we'd love to hear from you.</p>
+    <p>Together, we can build safer communities.</p>
+  </div>
+  <div class="hero-img-wrapper">
+    <!-- Placeholder styled to match the dark tactical look -->
+    <div style="width:100%;height:100%;min-height:340px;background:linear-gradient(120deg,#0f0f0f 0%,#1a1a1a 50%,#111 100%);display:flex;align-items:center;justify-content:center;position:relative;">
+      <!-- SSOP vehicle badge placeholder -->
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0.4;">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:80px;color:#fff;line-height:1;letter-spacing:-0.02em;">SSOP</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.2em;text-transform:uppercase;color:var(--red);">Community · First Responders</div>
+      </div>
+      <!-- two badge overlays -->
+      <div style="position:absolute;top:30px;right:120px;background:rgba(0,0,0,0.7);border:1px solid #333;padding:10px 14px;text-align:center;">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:18px;color:#fff;">SSOP</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:9px;color:var(--red);letter-spacing:0.1em;text-transform:uppercase;">COMMUNITY<br>VOLUNTEER<br>FIRST RESPONDER</div>
+      </div>
+      <div style="position:absolute;top:30px;right:20px;background:rgba(0,0,0,0.7);border:1px solid #333;padding:10px 14px;text-align:center;">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:18px;color:#fff;">SSOP</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:9px;color:var(--red);letter-spacing:0.1em;text-transform:uppercase;">COMMUNITY<br>VOLUNTEER<br>FIRST RESPONDER</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── GET IN TOUCH HEADING ── -->
+<div class="section-heading" style="background:var(--dark);padding:40px 32px 0;">
+  <h2>GET <span class="accent">IN TOUCH</span></h2>
+  <div class="heading-line"></div>
+</div>
+
+<!-- ── 5-COLUMN CONTACT CARDS ── -->
+<div class="contact-cards">
+  <div class="cards-grid">
+
+    <div class="contact-card">
+      <div class="icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+      </div>
+      <h3>Landline</h3>
+      <div class="value"><a href="tel:0100210178">010 021 0178</a></div>
+      <p>Available 24/7 for emergencies and operational support.</p>
+    </div>
+
+    <div class="contact-card">
+      <div class="icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.117.554 4.107 1.523 5.83L.057 23.869l6.204-1.627C7.919 23.396 9.908 24 11.999 24 18.627 24 24 18.627 24 12S18.627 0 11.999 0zm6.001 17.222c-.264.738-1.532 1.41-2.097 1.498-.565.088-1.265.124-2.041-.128-.47-.154-1.073-.36-1.843-.7-3.244-1.4-5.362-4.671-5.524-4.888-.162-.217-1.323-1.76-1.323-3.356 0-1.596.838-2.382 1.136-2.706.298-.324.648-.405.865-.405.217 0 .433.002.622.01.2.01.468-.076.733.56.264.636.898 2.196.978 2.354.081.158.135.344.027.554-.108.21-.162.34-.324.524-.162.184-.342.41-.487.551-.162.157-.33.327-.141.642.189.315.838 1.38 1.799 2.235 1.235 1.1 2.277 1.44 2.6 1.602.323.162.511.135.7-.081.189-.216.81-.946 1.026-1.27.216-.324.432-.27.73-.162.297.108 1.89.892 2.214 1.053.324.162.54.243.621.378.081.135.081.783-.182 1.52z"/></svg>
+      </div>
+      <h3>WhatsApp</h3>
+      <div class="value"><a href="https://wa.me/27790194931">079 019 4931</a></div>
+      <p>Chat with us on WhatsApp for quick assistance and updates.</p>
+    </div>
+
+    <div class="contact-card">
+      <div class="icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </div>
+      <h3>Email</h3>
+      <div class="value" style="font-size:14px;"><a href="mailto:occ@ssop.co.za">occ@ssop.co.za</a></div>
+      <p>We aim to respond to all emails within 24–48 hours.</p>
+    </div>
+
+    <div class="contact-card">
+      <div class="icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      </div>
+      <h3>Address</h3>
+      <div class="value" style="font-size:13px;line-height:1.4;">SSOP NPC OCC.<br>Wilrogate Centre,<br>Wilropark, Roodepoort,<br>JHB 1724</div>
+      <p style="margin-top:4px;">Our Operational Coordination Centre (OCC) location.</p>
+    </div>
+
+    <div class="contact-card">
+      <div class="icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <h3>Operational<br>Coordination Centre</h3>
+      <div class="value" style="color:var(--red);font-size:24px;">24/7</div>
+      <p>Our OCC operates 24/7 to coordinate resources and respond effectively.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── MAIN CONTENT: FORM + MAP ── -->
+<section style="background:var(--black);">
+  <div class="main-grid">
+
+    <!-- LEFT: FORM -->
+    <div class="main-left">
+      <div class="section-label" style="color:var(--red);">Send Us a Message</div>
+      <div class="red-line"></div>
+      <h2 class="form-title">Contact Form</h2>
+      <p class="form-desc">Fill out the form below and we'll get back to you within 24 hours.</p>
+
+      <form action="#" method="POST" class="form-row">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number">
+        <select name="subject">
+          <option value="" disabled selected>Subject</option>
+          <option>General Inquiry</option>
+          <option>Emergency Assistance</option>
+          <option>Membership</option>
+          <option>Partnership</option>
+          <option>CCTV / Monitoring</option>
+          <option>Other</option>
+        </select>
+        <textarea name="message" placeholder="Your Message" rows="5"></textarea>
+        <div class="form-footer">
+          <button type="submit" class="btn-submit">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            Send Message
+          </button>
+          <p class="form-note">We will get back to you as soon as possible.</p>
+        </div>
+      </form>
+    </div>
+
+    <!-- RIGHT: MAP + EMERGENCY -->
+    <div class="main-right">
+      <div class="service-label" style="color:var(--red);">Our Service Area</div>
+      <div class="red-line"></div>
+      <h2 class="service-title">Our <span class="accent">Service</span> Area</h2>
+
+      <!-- MAP: JS-rendered accurate Roodepoort boundary -->
+      <div class="map-box" style="height:240px;">
+        <canvas id="roodMap" style="width:100%;height:100%;display:block;"></canvas>
+      </div>
+
+      <script>
+      (function(){
+        const canvas = document.getElementById('roodMap');
+        const dpr = window.devicePixelRatio || 1;
+        function resize(){
+          const w = canvas.offsetWidth, h = canvas.offsetHeight;
+          canvas.width = w * dpr; canvas.height = h * dpr;
+          draw(w, h);
+        }
+
+        // Roodepoort boundary — precisely traced from reference map images.
+        // Key characteristics visible in the real maps:
+        // - Top edge: fairly straight, wide, running east-west (Cosmo City border)
+        // - TOP-RIGHT: large rectangular NOTCH cut inward (Northcliff/Randburg intrudes)
+        // - Right side: steps/jogs — not smooth
+        // - BOTTOM: jagged, irregular, narrows toward Florida/Soweto border
+        // - LEFT: fairly straight vertical western edge (Krugersdorp border)
+        // - A small eastern protrusion mid-right (Northgate area)
+        const boundary = [
+          // Start top-left, go clockwise
+          [27.748, -25.998], // NW top corner (near Cosmo City west)
+          [27.800, -25.990], // Top edge going east
+          [27.845, -25.988], // Top centre
+          [27.892, -25.992], // Top edge — Cosmo City / Northriding border
+          [27.935, -25.998], // Top-right, before the notch
+          [27.960, -26.010], // Top-right corner — notch begins here
+          [27.960, -26.038], // Notch — drop south
+          [27.978, -26.042], // Notch jogs east (Northgate protrusion)
+          [27.982, -26.058], // Northgate east tip
+          [27.978, -26.075], // East side — step inward
+          [27.965, -26.082], // Big notch cut: RANDBURG/NORTHCLIFF bites in
+          [27.952, -26.080], //  — notch goes left
+          [27.942, -26.092], //  — notch goes down
+          [27.952, -26.108], //  — notch goes right again (re-protrudes)
+          [27.968, -26.115], // Resume east boundary
+          [27.975, -26.132], // Constantia Kloof / Weltevredenpark east
+          [27.972, -26.155], // Allen's Nek east
+          [27.960, -26.172], // Florida Hills east
+          [27.948, -26.192], // Florida east, stepping inward
+          [27.940, -26.208], // Florida Lake / Maraisburg SE — steps further in
+          [27.925, -26.222], // Bottom-right jagged step
+          [27.908, -26.235], // Fleurhof / Braamfischerville
+          [27.888, -26.248], // Bottom — narrows
+          [27.865, -26.255], // South tip (widest south point)
+          [27.840, -26.252], // Bottom edge going west
+          [27.818, -26.248], // Bottom — Meadowlands border
+          [27.798, -26.242], // Dobsonville south boundary
+          [27.782, -26.230], // Doornkop west-south
+          [27.768, -26.215], // Jog — Matholesville
+          [27.755, -26.198], // West side stepping north
+          [27.748, -26.178], // Munsieville / Paardekraal
+          [27.742, -26.155], // Krugersdorp eastern border — straight run north
+          [27.738, -26.128],
+          [27.738, -26.100],
+          [27.740, -26.072],
+          [27.742, -26.048],
+          [27.745, -26.022], // NW top — return to start
+          [27.748, -25.998], // close
+        ];
+
+        const roads = [
+          // N14 — main east-west artery through centre of Roodepoort
+          { pts:[[27.740,-26.152],[27.790,-26.148],[27.838,-26.140],[27.885,-26.128],[27.930,-26.110],[27.968,-26.090]], label:'N14', lx:27.842, ly:-26.136 },
+          // N1 — runs along eastern boundary (not through Roodepoort)
+          { pts:[[27.978,-26.042],[27.980,-26.075],[27.975,-26.132],[27.972,-26.155]], label:'N1', lx:27.984, ly:-26.092 },
+          // R28 / Hendrik Potgieter — east-west through northern Roodepoort
+          { pts:[[27.742,-26.100],[27.790,-26.098],[27.840,-26.095],[27.892,-26.092],[27.940,-26.092],[27.968,-26.090]], label:'R28', lx:27.792, ly:-26.090 },
+          // R41 / Main Reef — north-south through old CBD
+          { pts:[[27.852,-26.252],[27.850,-26.215],[27.848,-26.180],[27.846,-26.145],[27.845,-26.108],[27.844,-26.072],[27.843,-26.035]], label:'R41', lx:27.836, ly:-26.068 },
+          // M18 / Ontdekkers Road
+          { pts:[[27.755,-26.198],[27.805,-26.194],[27.855,-26.192],[27.905,-26.190],[27.948,-26.192]], label:'M18', lx:27.858, ly:-26.186 },
+        ];
+
+        const cities = [
+          [27.660, -26.075, 'KRUGERSDORP'],
+          [28.005, -26.042, 'RANDBURG'],
+          [28.040, -26.205, 'JOHANNESBURG'],
+          [27.835, -26.282, 'SOWETO'],
+          [27.900, -25.960, 'COSMO CITY'],
+        ];
+
+        function project(lon, lat, bounds, W, H, pad){
+          const [minLon, maxLon, minLat, maxLat] = bounds;
+          const x = pad + ((lon - minLon) / (maxLon - minLon)) * (W - pad*2);
+          // lat is inverted (south is higher number = lower on screen)
+          const y = pad + ((lat - minLat) / (maxLat - minLat)) * (H - pad*2);
+          return [x * dpr, y * dpr];
+        }
+
+        function draw(W, H){
+          const ctx = canvas.getContext('2d');
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+          const minLon = 27.60, maxLon = 28.08;
+          const minLat = -26.32, maxLat = -25.93;
+          const pad = 18;
+
+          const proj = (lon,lat) => project(lon, lat, [minLon,maxLon,minLat,maxLat], W, H, pad);
+
+          // Background
+          ctx.fillStyle = '#080d13';
+          ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+          // Subtle grid
+          ctx.strokeStyle = '#141c26';
+          ctx.lineWidth = dpr;
+          const gridSteps = 8;
+          for(let i=0;i<=gridSteps;i++){
+            const lon = minLon + (maxLon-minLon)*i/gridSteps;
+            const [x1] = proj(lon, minLat);
+            const [, y1a] = proj(minLon, minLat);
+            const [, y1b] = proj(minLon, maxLat);
+            ctx.beginPath(); ctx.moveTo(x1,y1a); ctx.lineTo(x1,y1b); ctx.stroke();
+          }
+          for(let i=0;i<=gridSteps;i++){
+            const lat = minLat + (maxLat-minLat)*i/gridSteps;
+            const [x1a] = proj(minLon, lat);
+            const [x1b] = proj(maxLon, lat);
+            const [,y1] = proj(minLon, lat);
+            ctx.beginPath(); ctx.moveTo(x1a,y1); ctx.lineTo(x1b,y1); ctx.stroke();
+          }
+
+          // Roads (draw before boundary fill so they show under the highlight)
+          roads.forEach(road => {
+            const pts = road.pts.map(([lon,lat]) => proj(lon,lat));
+            ctx.beginPath();
+            ctx.moveTo(pts[0][0], pts[0][1]);
+            pts.slice(1).forEach(([x,y]) => ctx.lineTo(x,y));
+            ctx.strokeStyle = '#252f3a';
+            ctx.lineWidth = 1.5 * dpr;
+            ctx.stroke();
+          });
+
+          // Boundary fill (glow + fill)
+          const bPts = boundary.map(([lon,lat]) => proj(lon,lat));
+          ctx.beginPath();
+          ctx.moveTo(bPts[0][0], bPts[0][1]);
+          bPts.slice(1).forEach(([x,y]) => ctx.lineTo(x,y));
+          ctx.closePath();
+
+          // Red glow
+          ctx.shadowColor = '#C8102E';
+          ctx.shadowBlur = 18 * dpr;
+          ctx.fillStyle = 'rgba(200,16,46,0.18)';
+          ctx.fill();
+          ctx.shadowBlur = 0;
+
+          // Boundary stroke
+          ctx.strokeStyle = '#C8102E';
+          ctx.lineWidth = 2 * dpr;
+          ctx.stroke();
+
+          // Road labels
+          roads.forEach(road => {
+            if(!road.label) return;
+            const [rx, ry] = proj(road.lx, road.ly);
+            // small badge
+            const bw = 22*dpr, bh = 14*dpr;
+            ctx.fillStyle = '#1a2230';
+            ctx.strokeStyle = '#3a4a5a';
+            ctx.lineWidth = dpr;
+            ctx.beginPath();
+            ctx.roundRect ? ctx.roundRect(rx-bw/2, ry-bh/2, bw, bh, 2*dpr) : ctx.rect(rx-bw/2, ry-bh/2, bw, bh);
+            ctx.fill(); ctx.stroke();
+            ctx.fillStyle = '#8899aa';
+            ctx.font = `700 ${8*dpr}px 'Barlow Condensed', sans-serif`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(road.label, rx, ry);
+          });
+
+          // City labels
+          cities.forEach(([lon, lat, name]) => {
+            const [cx, cy] = proj(lon, lat);
+            ctx.fillStyle = '#4a5a6a';
+            ctx.font = `700 ${7.5*dpr}px 'Barlow Condensed', sans-serif`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.letterSpacing = '0.1em';
+            ctx.fillText(name, cx, cy);
+          });
+
+          // ROODEPOORT centre label
+          const centLon = 27.848, centLat = -26.148;
+          const [cx, cy] = proj(centLon, centLat);
+          ctx.fillStyle = 'rgba(255,255,255,0.92)';
+          ctx.font = `900 ${16*dpr}px 'Barlow Condensed', sans-serif`;
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.shadowColor = 'rgba(0,0,0,0.9)';
+          ctx.shadowBlur = 8*dpr;
+          ctx.fillText('ROODEPOORT', cx, cy);
+          ctx.shadowBlur = 0;
+
+          // Small dot at OCC location (Wilropark)
+          const [ox, oy] = proj(27.893, -26.100);
+          ctx.beginPath();
+          ctx.arc(ox, oy, 4*dpr, 0, Math.PI*2);
+          ctx.fillStyle = '#C8102E';
+          ctx.fill();
+          ctx.strokeStyle = '#fff';
+          ctx.lineWidth = dpr;
+          ctx.stroke();
+        }
+
+        window.addEventListener('resize', resize);
+        resize();
+      })();
+      </script>
+
+      <!-- Emergency box -->
+      <div class="emergency-box">
+        <div class="emergency-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        </div>
+        <div class="emergency-text">
+          <h4>Emergency?</h4>
+          <p>If this is an emergency, please call our Operational Coordination Centre immediately.</p>
+        </div>
+        <div class="emergency-numbers">
+          <span class="badge-247">24/7</span>
+          <span class="num">010 021 0178</span>
+          <span class="num">079 019 4931</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── LET'S WORK TOGETHER ── -->
+<section class="letswork">
+  <div class="letswork-left">
+    <div class="letswork-icon">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+        <circle cx="9" cy="7" r="4"/>
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+      </svg>
+    </div>
+    <h2>Let's Work <span class="accent">Together</span></h2>
+    <p>Partnerships and collaboration make our communities stronger. Whether you're a resident, business, organisation or stakeholder, we welcome the opportunity to connect and make a difference.</p>
+  </div>
+  <div class="letswork-right">
+    <div class="letswork-right-placeholder" style="background:linear-gradient(135deg,#1a1a1a 0%,#111 100%);display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:16px;padding:24px;">
+      <!-- SSOP team placeholder cards -->
+      <div style="background:rgba(200,16,46,0.1);border:1px solid rgba(200,16,46,0.3);padding:16px 20px;text-align:center;">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:20px;color:#fff;">SSOP</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:9px;color:var(--red);letter-spacing:0.15em;text-transform:uppercase;">Community</div>
+      </div>
+      <div style="background:rgba(200,16,46,0.1);border:1px solid rgba(200,16,46,0.3);padding:16px 20px;text-align:center;">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:20px;color:#fff;">SSOP</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:9px;color:var(--red);letter-spacing:0.15em;text-transform:uppercase;">Community</div>
+      </div>
+      <div style="background:rgba(200,16,46,0.1);border:1px solid rgba(200,16,46,0.3);padding:16px 20px;text-align:center;">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:20px;color:#fff;">SSOP</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:9px;color:var(--red);letter-spacing:0.15em;text-transform:uppercase;">Community</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-grid">
+
+    <!-- Col 1: Logo -->
+    <div>
+      <div class="footer-logo">YOUR<br>LOGO<br>HERE</div>
+    </div>
+
+    <!-- Col 2: Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">What We Do</a></li>
+        <li><a href="#">Our Projects</a></li>
+        <li><a href="#">Get Involved</a></li>
+        <li><a href="#" class="red">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Col 3: Contact Us -->
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <div class="contact-item"><span class="ico">📞</span><span>010 021 0178</span></div>
+      <div class="contact-item"><span class="ico">💬</span><span>079 019 4931</span></div>
+      <div class="contact-item"><span class="ico">✉️</span><span>occ@ssop.co.za</span></div>
+      <div class="contact-item"><span class="ico">📍</span><span>SSOP NPC OCC.<br>Wilrogate Centre, Wilropark,<br>Roodepoort, JHB 1724</span></div>
+    </div>
+
+    <!-- Col 4: Follow Us + Legal -->
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#" title="Facebook">f</a>
+        <a href="#" title="Instagram">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="var(--dark)"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="var(--dark)" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <a href="#" title="WhatsApp">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.117.554 4.107 1.523 5.83L.057 23.869l6.204-1.627C7.919 23.396 9.908 24 11.999 24 18.627 24 24 18.627 24 12S18.627 0 11.999 0zm6.001 17.222c-.264.738-1.532 1.41-2.097 1.498-.565.088-1.265.124-2.041-.128-.47-.154-1.073-.36-1.843-.7-3.244-1.4-5.362-4.671-5.524-4.888-.162-.217-1.323-1.76-1.323-3.356 0-1.596.838-2.382 1.136-2.706.298-.324.648-.405.865-.405.217 0 .433.002.622.01.2.01.468-.076.733.56.264.636.898 2.196.978 2.354.081.158.135.344.027.554-.108.21-.162.34-.324.524-.162.184-.342.41-.487.551-.162.157-.33.327-.141.642.189.315.838 1.38 1.799 2.235 1.235 1.1 2.277 1.44 2.6 1.602.323.162.511.135.7-.081.189-.216.81-.946 1.026-1.27.216-.324.432-.27.73-.162.297.108 1.89.892 2.214 1.053.324.162.54.243.621.378.081.135.081.783-.182 1.52z"/></svg>
+        </a>
+      </div>
+
+      <h4 style="margin-top:24px;">Legal</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">POPIA Compliance</a></li>
+      </ul>
+    </div>
+
+    <!-- Col 5: Registered NPC -->
+    <div class="footer-npc">
+      <div class="npc-label">Registered NPC</div>
+      <div class="npc-number">2017/019873/08</div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 SSOP NPC. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>

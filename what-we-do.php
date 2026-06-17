@@ -13,7 +13,7 @@ require_once __DIR__ . '/includes/header.php';
 ?>
 
 <!-- HERO SECTION -->
-<section class="bg-ssop-black py-12 md:py-20 px-4 md:px-8 lg:px-16 xl:px-24 relative overflow-hidden" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/images/header2.png') center/cover no-repeat;">
+<section id="main-content" class="bg-ssop-black py-12 md:py-20 px-4 md:px-8 lg:px-16 xl:px-24 relative overflow-hidden" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/images/header2.png') center/cover no-repeat;">
   <div class="max-w-6xl mx-auto">
     <h1 class="font-barlow-condensed text-4xl md:text-6xl font-black uppercase text-white mb-6">WHAT WE DO</h1>
     <p class="text-base md:text-lg text-gray-300 leading-relaxed max-w-2xl">
@@ -108,7 +108,13 @@ require_once __DIR__ . '/includes/header.php';
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <!-- 24/7 Operational Coordination Centre -->
       <div class="bg-ssop-black rounded-lg overflow-hidden flex flex-col md:flex-row">
-        <img src="/assets/images/operations.jpg" alt="Operations Centre" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
+        <!-- Image Placeholder -->
+        <div class="w-full md:w-1/3 h-48 md:h-auto bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center flex-shrink-0">
+          <div class="text-center opacity-40">
+            <div class="font-barlow-condensed font-black text-3xl text-white mb-1">SSOP</div>
+            <div class="font-barlow-condensed font-bold text-xs tracking-widest uppercase text-ssop-red">Community Volunteer First Responder</div>
+          </div>
+        </div>
         <div class="p-6 flex-1 flex flex-col justify-center">
           <div class="flex justify-center md:justify-start mb-4">
             <svg class="w-12 h-12 text-ssop-red" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -124,7 +130,13 @@ require_once __DIR__ . '/includes/header.php';
       
       <!-- Rapid Response & Patrols -->
       <div class="bg-ssop-black rounded-lg overflow-hidden flex flex-col md:flex-row">
-        <img src="/assets/images/patrol.jpg" alt="Patrols" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
+        <!-- Image Placeholder -->
+        <div class="w-full md:w-1/3 h-48 md:h-auto bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center flex-shrink-0">
+          <div class="text-center opacity-40">
+            <div class="font-barlow-condensed font-black text-3xl text-white mb-1">SSOP</div>
+            <div class="font-barlow-condensed font-bold text-xs tracking-widest uppercase text-ssop-red">Community Volunteer First Responder</div>
+          </div>
+        </div>
         <div class="p-6 flex-1 flex flex-col justify-center">
           <div class="flex justify-center md:justify-start mb-4">
             <svg class="w-12 h-12 text-ssop-red" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -140,7 +152,13 @@ require_once __DIR__ . '/includes/header.php';
       
       <!-- Community Engagement -->
       <div class="bg-ssop-black rounded-lg overflow-hidden flex flex-col md:flex-row">
-        <img src="/assets/images/community.jpg" alt="Community Engagement" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
+        <!-- Image Placeholder -->
+        <div class="w-full md:w-1/3 h-48 md:h-auto bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center flex-shrink-0">
+          <div class="text-center opacity-40">
+            <div class="font-barlow-condensed font-black text-3xl text-white mb-1">SSOP</div>
+            <div class="font-barlow-condensed font-bold text-xs tracking-widest uppercase text-ssop-red">Community Volunteer First Responder</div>
+          </div>
+        </div>
         <div class="p-6 flex-1 flex flex-col justify-center">
           <div class="flex justify-center md:justify-start mb-4">
             <svg class="w-12 h-12 text-ssop-red" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -156,7 +174,13 @@ require_once __DIR__ . '/includes/header.php';
       
       <!-- Emergency Assistance -->
       <div class="bg-ssop-black rounded-lg overflow-hidden flex flex-col md:flex-row">
-        <img src="/assets/images/emergency.jpg" alt="Emergency Assistance" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
+        <!-- Image Placeholder -->
+        <div class="w-full md:w-1/3 h-48 md:h-auto bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center flex-shrink-0">
+          <div class="text-center opacity-40">
+            <div class="font-barlow-condensed font-black text-3xl text-white mb-1">SSOP</div>
+            <div class="font-barlow-condensed font-bold text-xs tracking-widest uppercase text-ssop-red">Community Volunteer First Responder</div>
+          </div>
+        </div>
         <div class="p-6 flex-1 flex flex-col justify-center">
           <div class="flex justify-center md:justify-start mb-4">
             <svg class="w-12 h-12 text-ssop-red" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -172,7 +196,13 @@ require_once __DIR__ . '/includes/header.php';
       
       <!-- Communication & Coordination -->
       <div class="bg-ssop-black rounded-lg overflow-hidden flex flex-col md:flex-row">
-        <img src="/assets/images/communication.jpg" alt="Communication" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
+        <!-- Image Placeholder -->
+        <div class="w-full md:w-1/3 h-48 md:h-auto bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center flex-shrink-0">
+          <div class="text-center opacity-40">
+            <div class="font-barlow-condensed font-black text-3xl text-white mb-1">SSOP</div>
+            <div class="font-barlow-condensed font-bold text-xs tracking-widest uppercase text-ssop-red">Community Volunteer First Responder</div>
+          </div>
+        </div>
         <div class="p-6 flex-1 flex flex-col justify-center">
           <div class="flex justify-center md:justify-start mb-4">
             <svg class="w-12 h-12 text-ssop-red" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -188,7 +218,13 @@ require_once __DIR__ . '/includes/header.php';
       
       <!-- Awareness & Education -->
       <div class="bg-ssop-black rounded-lg overflow-hidden flex flex-col md:flex-row">
-        <img src="/assets/images/education.jpg" alt="Education" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
+        <!-- Image Placeholder -->
+        <div class="w-full md:w-1/3 h-48 md:h-auto bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center flex-shrink-0">
+          <div class="text-center opacity-40">
+            <div class="font-barlow-condensed font-black text-3xl text-white mb-1">SSOP</div>
+            <div class="font-barlow-condensed font-bold text-xs tracking-widest uppercase text-ssop-red">Community Volunteer First Responder</div>
+          </div>
+        </div>
         <div class="p-6 flex-1 flex flex-col justify-center">
           <div class="flex justify-center md:justify-start mb-4">
             <svg class="w-12 h-12 text-ssop-red" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
